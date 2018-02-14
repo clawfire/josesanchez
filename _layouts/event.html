@@ -1,0 +1,137 @@
+---
+layout: default
+---
+<div class="singleEvent padding background-properties" style="background-image: url(assets/img/events/home-events-1.jpg);">
+    <div class="container">
+        <div class="sectionTitle paddingBottom">
+            <span class="heading-t3"></span>
+            <h2><a href="https://electriccastle.ro/info/overview" target="_blank">Description</a></h2>
+            <span class="heading-b3"></span>
+        </div><!-- end sectionTtile -->
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="descriptionEvent">
+                    {{ content }}
+                </div><!-- end descriptionEvent -->
+                {% if page.picture %}
+                <div class="coverEvent">
+                    <a href="{{page.picture}}" class="lightbox">
+                        <img src="{{page.picture}}" alt="">
+                    </a>
+                </div><!-- end coverEvent -->
+                {% endif %}
+                {% if page.link_ticket %}
+                <div class="ticket">
+                    <h4>Get Your Ticket Now</h4>
+                    <a href="{{page.link_ticket}}" onclick="window.open(this.href)">Buy Ticket</a>
+                </div><!-- end ticket -->
+                {% endif %}
+            </div><!-- end col-sm-8 -->
+            <div class="col-sm-3 col-sm-offset-1">
+                <div class="sidebarAlbum">
+                    <div class="widget">
+                        <h3>Details</h3>
+                        <ul>
+                            <li>Date:<span>{{ page.date | date: "%b %d, %Y" }} </span></li>
+                            <li>Time:<span>12:00 PM </span></li>
+                            <li>Location:<span>{{ page.venue }} </span></li>
+                            <li>Price:<span>{% if page.price %}{{page.price | append : "€ "}}{% else %}FREE{% endif %}</span></li>
+                        </ul>
+                    </div><!-- end widget -->
+                    {% if page.social_twitter %}
+                    <div class="widget">
+                        <h3>Twitter</h3>
+                        <a class="twitter-timeline" href="https://twitter.com/{{page.social_twitter}}" data-widget-id="717713562152673280">Tweets by @{{page.social_twitter}}</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </div><!-- end widget -->
+                    {% endif %}
+                    {% if page.social_instagram %}
+                    <div class="widget">
+                        <h3>Instagram</h3>
+                        <div class="instagram-widget">
+                            <ul id="instagram-sidebar-widget" class="clearfix"></ul>
+                        </div>
+                    </div><!-- end widget -->
+                    {% endif %}
+                    {% if page.social_instagram or page.social_twitter or page.social_facebook or page.social_youtube %}
+                    <div class="widget">
+                        <h3>Follow On</h3>
+                        <section>
+                          <ul id='services'>
+                              {% if page.social_facebook %}
+                            <li>
+                              <div>
+                                  <a href="{{page.social_facebook}}" title="Discover {{page.venue}} on Facebook"><i class="fa fa-facebook"></i></a>
+                              </div>
+                            </li>
+                            {% endif %}
+                            {% if page.social_twitter %}
+                            <li>
+                                <div>
+                                    <a href="https://twitter.com/{{page.social_twitter}}" title="See tweets from {{page.venue}}"><i class="fa fa-twitter"></i></a>
+                                </div>
+                            </li>
+                            {% endif %}
+                            {% if page.social_instagram %}
+                            <li>
+                                <div>
+                                    <a href="https://instagram.com/{{page.social_instagram}}" title="See pictures of {{page.venue}} on Instagram"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </li>
+                            {% endif %}
+                            {% if page.social_youtube %}
+                            <li>
+                                <div>
+                                    <a href="http://youtube.com/channel/{{page.social_youtube}}" title="Watch videos of {{page.venue}} on Youtube"><i class="fa fa-youtube"></i></a>
+                                </div>
+                            </li>
+                            {% endif %}
+                          </ul>
+                        </section>
+                    </div><!-- end widget -->
+                    {% endif %}
+                </div><!-- end sidebarAlbum -->
+            </div><!-- end col-sm-3 col-sm-offset-1 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div>
+<!-- =============== END EVENT SINGLE ================ -->
+<!-- =============== START MAP ================ -->
+{% if page.gps%}
+<section class="googleMap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="map-canvas" class="google-map" data-lat="{{page.gps[0]}}" data-long="{{page.gps[1]}}" data-api="{{site.google_api_key}}" data-title="{{page.venue}}" data-description="{{page.location}}"></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+<!-- =============== END MAP ================ -->
+<!-- =============== START PAGINATION ================ -->
+<section class="paginationFooter ">
+    <div class="container">
+        {% if paginator.total_pages > 1 %}
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-6">
+                    {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/'  }}" class="pagination-previous">
+                        <small>Preview Event</small>
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="col-sm-6">
+                    {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/'  }}" class="pagination-next">
+                        <small>Next Event</small>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+<!-- =============== END PAGINATION ================ -->

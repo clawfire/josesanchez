@@ -1,0 +1,39 @@
+<!-- =============== START ALBUM COVER SECTION ================ -->
+<section class="padding albumsHome hide-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="sectionTitle paddingBottom">
+                    <span class="heading-t3"></span>
+                    <h2><a href="albumsFullBackground.html">Discography</a></h2>
+                    <span class="heading-b3"></span>
+                </div>
+                <!-- end sectionTtile -->
+            </div>
+            <!-- end col-sm-12 -->
+        </div>
+        <div class="list-albums">
+            <ul class="list-feature col-md-12 col-xs-12 col-sm-12">
+                {% for album in site.albums %}
+                <li class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="album-icon">
+                        <span class="thumbs-album">
+								<a href="{{album.listen_url}}"><img width="270" height="270" src="{{site.BASE_PATH}}{{album.picture}}" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+							</span>
+                        <span class="disk"></span>
+                    </div>
+                    <!-- END ALBUM ICON -->
+                    <div class="name">
+                        <h3>{{album.title}}</h3>
+                        <p>{{album.type}}</p>
+                    </div>
+                    <!-- end name -->
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- end list-albums -->
+    </div>
+    <!-- end container -->
+</section>
+<!-- =============== END ALBUM COVER SECTION ================ -->

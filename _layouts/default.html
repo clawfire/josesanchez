@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    {% include file_loarder.html %}
+    {% if page.is_event %}
+        {% include breadcrumb-event.html %}
+    {% else %}
+        {% include breadcrumb.html %}
+    {% endif %}
+    {{ content }}
+    {% include footer.html %}
+</body>
+</html>

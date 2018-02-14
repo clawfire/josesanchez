@@ -1,0 +1,53 @@
+<!-- =============== START EVENTS SECTION-1 ================ -->
+<section style="background-image: url({{site.BASE_PATH}}/assets/img/events/tableEventsHome.png);" class="background-properties hide-section paddingHomeEvents">
+    <div class="tableEvents">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sectionTitle paddingBottom">
+                        <span class="heading-t3"></span>
+                        <h2><a href="events.html">Events</a></h2>
+                        <span class="heading-b3"></span>
+                    </div>
+                    <!-- end sectionTtile -->
+                    {% assign eventList = site.events | where_exp: 'item', 'item.date >= site.time' | sort: 'date' %}
+                    {% if eventList.size != 0 %}
+                    <table>
+                        <tr class="tableEventsTitle">
+                            <th class="date">Date</th>
+                            <th class="venue">Venue</th>
+                            <th class="location">Location</th>
+                            <th class="tickets">Tickets</th>
+                            <th></th>
+                        </tr>
+                            {% for event in eventList %}
+                            <tr>
+                                <td class="aqura-date"><a href="{{event.url}}"><i class="fa fa-plus"></i></a><a href="{{event.url}}">{{event.date | date: "%a, %b %d"}}</a></td>
+                                <td class="aqura-location"><a href="{{event.url}}">{{event.venue}}</a></td>
+                                <td class="aqura-city"><a href="{{event.url}}">{{event.location}}</a></td>
+                                <td class="aqura-tickets">
+                                    {% if event.link_ticket %}
+                                    <a href="{{event.link_ticket}}">Tickets</a>
+                                    {% endif %}
+                                </td>
+                                <td class="aqura-vip">
+                                    {% if event.link_rsvp %}
+                                    <a href="{{event.link_rsvp}}">RSVP</a>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                    </table>
+                    {% else %}
+                        <p>I don't have any new event planned so far. But that's a good new, that mean I'm free for booking ! Just <a href="mailto:booking@dhsanchez.eu" title="click to send me an email">send me an email</a> if you are interested.</p>
+                    {% endif %}
+                </div>
+                <!-- end col-sm-12 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end tableEvents -->
+</section>
+<!-- =============== END EVENTS SECTION-1 ================ -->
