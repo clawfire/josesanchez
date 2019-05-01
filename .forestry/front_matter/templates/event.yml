@@ -25,6 +25,10 @@ fields:
     config:
       required: false
     label: Location
+  - name: gps
+    type: tag_list
+    default: []
+    label: GPS
   label: Venue
 - name: price
   type: number
