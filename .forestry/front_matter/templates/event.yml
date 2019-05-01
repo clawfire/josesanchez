@@ -1,0 +1,46 @@
+---
+label: Event
+hide_body: true
+fields:
+- type: text
+  name: date
+  label: date
+- type: text
+  name: venue
+  label: venue
+- type: text
+  name: location
+  label: location
+- type: text
+  name: link_ticket
+  label: link_ticket
+- type: text
+  name: link_rsvp
+  label: link_rsvp
+- type: text
+  name: price
+  label: price
+- type: file
+  name: brand_logo
+  label: brand_logo
+- type: text
+  name: brand_url
+  label: brand_url
+- type: text
+  name: social_twitter
+  label: social_twitter
+- type: text
+  name: social_instagram
+  label: social_instagram
+- type: text
+  name: social_facebook
+  label: social_facebook
+- type: text
+  name: social_youtube
+  label: social_youtube
+- type: text
+  name: picture
+  label: picture
+- type: boolean
+  name: isBig
+  label: isBig
