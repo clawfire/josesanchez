@@ -99,3 +99,5 @@ fields:
   config:
     maxSize: 250
   label: Picture
+pages:
+- _events/2018-01-16-Dark-Room.md
