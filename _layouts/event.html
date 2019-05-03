@@ -38,14 +38,14 @@ layout: default
                             <li>Price:<span>{% if page.price %}{{page.price | append : "€ "}}{% else %}FREE{% endif %}</span></li>
                         </ul>
                     </div><!-- end widget -->
-                    {% if page.social_twitter %}
+                    {% if page.social.twitter %}
                     <div class="widget">
                         <h3>Twitter</h3>
-                        <a class="twitter-timeline" href="https://twitter.com/{{page.social_twitter}}" data-height="500" data-link-color="#E1904A">Tweets by @{{page.social_twitter}}</a>
+                        <a class="twitter-timeline" href="https://twitter.com/{{page.social.twitter}}" data-height="500" data-link-color="#E1904A">Tweets by @{{page.social.twitter}}</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div><!-- end widget -->
                     {% endif %}
-                    {% if page.social_instagram %}
+                    {% if page.social.instagram %}
                     <div class="widget">
                         <h3>Instagram</h3>
                         <div class="instagram-widget">
@@ -53,36 +53,36 @@ layout: default
                         </div>
                     </div><!-- end widget -->
                     {% endif %}
-                    {% if page.social_instagram or page.social_twitter or page.social_facebook or page.social_youtube %}
+                    {% if page.social.instagram or page.social.twitter or page.social.facebook or page.social.youtube %}
                     <div class="widget">
                         <h3>Follow On</h3>
                         <section>
                           <ul id='services'>
-                              {% if page.social_facebook %}
+                              {% if page.social.facebook %}
                             <li>
                               <div>
-                                  <a href="{{page.social_facebook}}" title="Discover {{page.venue}} on Facebook"><i class="fa fa-facebook"></i></a>
+                                  <a href="{{page.social.facebook}}" title="Discover {{page.venue}} on Facebook"><i class="fa fa-facebook"></i></a>
                               </div>
                             </li>
                             {% endif %}
-                            {% if page.social_twitter %}
+                            {% if page.social.twitter %}
                             <li>
                                 <div>
-                                    <a href="https://twitter.com/{{page.social_twitter}}" title="See tweets from {{page.venue}}"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://twitter.com/{{page.social.twitter}}" title="See tweets from {{page.venue}}"><i class="fa fa-twitter"></i></a>
                                 </div>
                             </li>
                             {% endif %}
-                            {% if page.social_instagram %}
+                            {% if page.social.instagram %}
                             <li>
                                 <div>
-                                    <a href="https://instagram.com/{{page.social_instagram}}" title="See pictures of {{page.venue}} on Instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://instagram.com/{{page.social.instagram}}" title="See pictures of {{page.venue}} on Instagram"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </li>
                             {% endif %}
-                            {% if page.social_youtube %}
+                            {% if page.social.youtube %}
                             <li>
                                 <div>
-                                    <a href="http://youtube.com/channel/{{page.social_youtube}}" title="Watch videos of {{page.venue}} on Youtube"><i class="fa fa-youtube"></i></a>
+                                    <a href="http://youtube.com/channel/{{page.social.youtube}}" title="Watch videos of {{page.venue}} on Youtube"><i class="fa fa-youtube"></i></a>
                                 </div>
                             </li>
                             {% endif %}

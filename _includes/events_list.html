@@ -24,7 +24,7 @@
                             <tr>
                                 <td class="aqura-date"><a href="{{event.url}}"><i class="fa fa-plus"></i></a><a href="{{event.url}}">{{event.date | date: "%a, %b %d"}}</a></td>
                                 <td class="aqura-location"><a href="{{event.url}}">{{event.venue}}</a></td>
-                                <td class="aqura-city"><a href="{{event.url}}">{{event.location}}</a></td>
+                                <td class="aqura-city"><a href="{{event.url}}">{{site.data.venues[event.venue].location}}</a></td>
                                 <td class="aqura-tickets">
                                     {% if event.link_ticket %}
                                     <a href="{{event.link_ticket}}">Tickets</a>

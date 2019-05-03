@@ -1,0 +1,35 @@
+Scotts:
+    location: Luxembourg, Luxembourg
+    gps:
+        - 49.6085767
+        - 6.1361146
+Bar Rouge:
+    location: 'Luxembourg, Luxembourg'
+    gps:
+        - 49.6132061
+        - 6.127195700000016
+Limbo:
+    location: 'Luxembourg, Luxembourg'
+    gps:
+      - 49.6124368
+      - 6.1313334999999825
+XL Sauna:
+    location: 'Saarbrucken, Germany'
+    gps:
+      - 49.22381
+      - 7.026290000000017
+Steambeats:
+    location: 'Saarbrucken, Germany'
+    gps:
+      - 49.22381
+      - 7.026290000000017
+Apoteca:
+    location: Luxembourg, Luxembourg
+    gps:
+        - 49.6113792
+        - 6.1329316
+Wicki Beach:
+    location: Esch sur Alzette, Luxembourg
+    gps:
+        -
+        -
