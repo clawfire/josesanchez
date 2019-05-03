@@ -1,0 +1,17 @@
+---
+date: 2019-05-31 22:00:00 +0200
+venue: Apoteca
+link_ticket: null
+link_rsvp: null
+price: null
+picture: null
+isBig: false
+brand:
+  logo: http://apoteca.lu/welcome/wp-content/uploads/2017/01/logowhite.png
+  website: http://apoteca.lu/welcome/
+social:
+  facebook: null
+  youtube: null
+  twitter: null
+  instagram: null
+---
