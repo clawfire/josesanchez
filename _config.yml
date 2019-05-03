@@ -13,41 +13,46 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title:            DJ José Sanchez
-baseurl:          "/" # the subpath of your site, e.g. /blog
-url:              "http://www.djsanchez.eu" # the base hostname & protocol for your site, e.g. http://example.com
-timezone:         "Europe/Luxembourg"
-google_api_key:   "AIzaSyAb9vgRqufy200BAaulAakY1eGegpGp4eM"
+title:              DJ José Sanchez
+baseurl:            "/" # the subpath of your site, e.g. /blog
+url:                "http://www.djsanchez.eu" # the base hostname & protocol for your site, e.g. http://example.com
+timezone:           "Europe/Luxembourg"
+google_api_key:     "AIzaSyAb9vgRqufy200BAaulAakY1eGegpGp4eM"
 
 # Build settings
-markdown:         kramdown
+markdown:           kramdown
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
 collections:
   events :
-      output:     true
-      permalink:  /:collection/:path/
+      output:       true
+      permalink:    /:collection/:path/
   albums :
-      output :    true
-      permalink:  /:collection/:path/
+      output :      true
+      permalink:    /:collection/:path/
 defaults:
     - scope :
-        path:     ""
-        type:     "events"
+        path:       ""
+        type:       "events"
       values:
-        layout:   "event"
-        is_event: true
+        layout:     "event"
+        is_event:   true
     - scope :
-        path:     ""
-        type:     "albums"
+        path:       ""
+        type:       "albums"
       values:
-        layout:   "album"
-        is_album : true
+        layout:     "album"
+        is_album :  true
 
 pagination:
-    enabled:      false
-    collection:   ['posts', 'events']
+    enabled:        false
+    collection:     ['posts', 'events']
+atom:
+    postDirs:
+        - _events
+        - _albumsne
+    defaultPostDir: _events
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
