@@ -33,3 +33,8 @@ Wicki Beach:
     gps:
         - 49.496735801293795
         - 5.952130434731089
+Metz Pride Village:
+    location: Metz, France
+    gps:
+        - 49.11518993927727
+        - 6.172662287427329
