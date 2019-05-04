@@ -18,6 +18,10 @@ baseurl:            "/" # the subpath of your site, e.g. /blog
 url:                "http://www.djsanchez.eu" # the base hostname & protocol for your site, e.g. http://example.com
 timezone:           "Europe/Luxembourg"
 google_api_key:     "AIzaSyBtYUCV9vOHWUXtS7Vb7PW34c1jSmGDR1A"
+social:
+    facebook:       https://www.facebook.com/DJ.J.Sanchez/
+    twitter:        sanchezjosedj
+    instagram:      dj_josesanchez
 
 # Build settings
 markdown:           kramdown
@@ -46,8 +50,7 @@ defaults:
         is_album :  true
 
 pagination:
-    enabled:        false
-    collection:     ['posts', 'events']
+    enabled:        true
 atom:
     postDirs:
         - _events

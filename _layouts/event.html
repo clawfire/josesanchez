@@ -1,11 +1,14 @@
 ---
 layout: default
+pagination:
+  enabled: true
+  collection: events
 ---
 <div class="singleEvent padding background-properties" style="background-image: url(assets/img/events/home-events-1.jpg);">
     <div class="container">
         <div class="sectionTitle paddingBottom">
             <span class="heading-t3"></span>
-            <h2><a href="https://electriccastle.ro/info/overview" target="_blank">Description</a></h2>
+            <h2><a href="{{page.brand.website}}" target="_blank">Description</a></h2>
             <span class="heading-b3"></span>
         </div><!-- end sectionTtile -->
         <div class="row">
@@ -38,58 +41,46 @@ layout: default
                             <li>Price:<span>{% if page.price %}{{page.price | append : "€ "}}{% else %}FREE{% endif %}</span></li>
                         </ul>
                     </div><!-- end widget -->
-                    {% if page.social.twitter %}
                     <div class="widget">
                         <h3>Twitter</h3>
-                        <a class="twitter-timeline" href="https://twitter.com/{{page.social.twitter}}" data-height="500" data-link-color="#E1904A">Tweets by @{{page.social.twitter}}</a>
+                        <a class="twitter-timeline" href="https://twitter.com/{{page.social.twitter | default: site.social.twitter}}" data-height="500" data-link-color="#E1904A">Tweets by @{{page.social.twitter}}</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div><!-- end widget -->
-                    {% endif %}
-                    {% if page.social.instagram %}
                     <div class="widget">
                         <h3>Instagram</h3>
                         <div class="instagram-widget">
                             <ul id="instagram-sidebar-widget" class="clearfix"></ul>
                         </div>
                     </div><!-- end widget -->
-                    {% endif %}
-                    {% if page.social.instagram or page.social.twitter or page.social.facebook or page.social.youtube %}
                     <div class="widget">
                         <h3>Follow On</h3>
                         <section>
                           <ul id='services'>
-                              {% if page.social.facebook %}
                             <li>
                               <div>
-                                  <a href="{{page.social.facebook}}" title="Discover {{page.venue}} on Facebook"><i class="fa fa-facebook"></i></a>
+                                  <a href="{{page.social.facebook|default: site.social.facebook}}" title="Discover on Facebook"><i class="fa fa-facebook"></i></a>
                               </div>
                             </li>
-                            {% endif %}
-                            {% if page.social.twitter %}
                             <li>
                                 <div>
-                                    <a href="https://twitter.com/{{page.social.twitter}}" title="See tweets from {{page.venue}}"><i class="fa fa-twitter"></i></a>
+                                    <a href="{{page.social.twitter|default: site.social.twitter|prepend: "https://twitter.com/"}}" title="See tweets"><i class="fa fa-twitter"></i></a>
                                 </div>
                             </li>
-                            {% endif %}
-                            {% if page.social.instagram %}
                             <li>
                                 <div>
-                                    <a href="https://instagram.com/{{page.social.instagram}}" title="See pictures of {{page.venue}} on Instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="{{page.social.instagram|default: site.social.instagram|prepend: "https://instagram.com/"}}" title="See pictures on Instagram"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </li>
-                            {% endif %}
                             {% if page.social.youtube %}
                             <li>
                                 <div>
-                                    <a href="http://youtube.com/channel/{{page.social.youtube}}" title="Watch videos of {{page.venue}} on Youtube"><i class="fa fa-youtube"></i></a>
+                                    <a href="{{page.social.youtube}}" title="Watch videos of {{page.venue}} on Youtube"><i class="fa fa-youtube"></i></a>
                                 </div>
                             </li>
                             {% endif %}
                           </ul>
                         </section>
                     </div><!-- end widget -->
-                    {% endif %}
                 </div><!-- end sidebarAlbum -->
             </div><!-- end col-sm-3 col-sm-offset-1 -->
         </div><!-- end row -->
@@ -118,13 +109,21 @@ layout: default
                 <div class="col-sm-6">
                     {% if paginator.previous_page %}
                     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/'  }}" class="pagination-previous">
-                        <small>Preview Event</small>
+                        <small>Previous Event</small>
                     </a>
-                    {% endif %}
+                    {%- else -%}
+                    <a href="#" class="pagination-previous disable">
+                        <small>Previous Event</small>
+                    </a>
+                    {%- endif -%}
                 </div>
                 <div class="col-sm-6">
                     {% if paginator.next_page %}
                     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/'  }}" class="pagination-next">
+                        <small>Next Event</small>
+                    </a>
+                    {%- else -%}
+                    <a href="#" class="pagination-next disable">
                         <small>Next Event</small>
                     </a>
                     {% endif %}
