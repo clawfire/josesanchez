@@ -13,7 +13,7 @@ social:
   facebook: https://www.facebook.com/couleursgaies
   youtube: https://www.youtube.com/channel/UCjOi-jIw0GtO7jXDNyiI5pw
   twitter: couleursgaies
-  instagram: https://www.instagram.com/couleursgaies/
+  instagram: couleursgaies
 ---
 
 Cette année la 17ème édition du Metz Pride Day aura lieu samedi 15 juin. Et comme l'année dernière, la Place de la République, à Metz, acceuillera le Pride Village. J'aurais l'honneur et le plaisir de mixer à cette occasion sur la scène de cet évènement annuel fort, à la fois pour la région mais aussi pour la communautée LGBT.

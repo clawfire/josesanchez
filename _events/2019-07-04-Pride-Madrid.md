@@ -13,7 +13,7 @@ social:
   facebook: https://www.facebook.com/woofluxembourg
   youtube: https://www.youtube.com/channel/UChdzQVi29kSg_140fS4qT0A
   twitter: null
-  instagram: http://instagram.com/woofluxembourg
+  instagram: woofluxembourg
 ---
 
 Beware 🇪🇸 Spain, we are coming! For the 🏳️‍🌈 Madrid Pride, we are happy to announce our presence for a one of a kind party in Sala Pirandello 1, 2, y 3 with The Raw Team, Stephan Raw, and Rainboworld!
