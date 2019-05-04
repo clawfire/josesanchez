@@ -43,3 +43,8 @@ Melusina:
     gps:
         - 49.6112348146306
         - 6.141228675842285
+Woof Madrid:
+    location: Madrid, Luxembourg
+    gps:
+        - 40.4253029
+        - -3.7137318
