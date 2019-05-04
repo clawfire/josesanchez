@@ -4,42 +4,42 @@
         <div class="col-sm-12">
         <div class="before-FullscreenSlider"></div>
             <div class="breadcrumb-fullscreen-parent phone-menu-bg ">
-                <div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: url('{{site.BASE_PATH}}/assets/img/header/header.png');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+                <div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: url('{{"/assets/img/header/header.png"|relative_url}}');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
                     <div class="singleCounter">
-                        {% if page.brand_logo %}
+                        {% if page.brand.logo %}
                         <div class="SingleEventTitle">
-                            <a href="{{page.brand_url}}" target="_blank"><img src="{{page.brand_logo}}" alt="Event"></a>
+                            <a href="{{page.brand.url}}" target="_blank"><img src="{{page.brand.logo|relative_url}}" alt="Event"></a>
                         </div>
                         {% endif %}
 
                         <div class="sm-countdown sm_content_element sm-style2" id="sm_countdown-19" data-date="{{page.date || date : "%Y/%m/%d"}}">
-                    <div class="displayCounter">
-                        <div class="column">
-                            <div class="sm_countdown_inner">
-                                <input class="element days" readonly="readonly" data-min="0" data-max="365" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
-                                <span class="unit days-title">days</span>
+                            <div class="displayCounter">
+                                <div class="column">
+                                    <div class="sm_countdown_inner">
+                                        <input class="element days" readonly="readonly" data-min="0" data-max="365" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+                                        <span class="unit days-title">days</span>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="sm_countdown_inner">
+                                        <input class="element hour" readonly="readonly" data-min="0" data-max="24" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+                                        <span class="unit hours-title">hrs</span>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="sm_countdown_inner">
+                                        <input class="element minute" readonly="readonly" data-min="0" data-max="60" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+                                        <span class="unit mins-title">min</span>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="sm_countdown_inner">
+                                        <input class="element second" readonly="readonly" data-min="0" data-max="60" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
+                                        <span class="unit secs-title">sec</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="column">
-                            <div class="sm_countdown_inner">
-                                <input class="element hour" readonly="readonly" data-min="0" data-max="24" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
-                                <span class="unit hours-title">hrs</span>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="sm_countdown_inner">
-                                <input class="element minute" readonly="readonly" data-min="0" data-max="60" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
-                                <span class="unit mins-title">min</span>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="sm_countdown_inner">
-                                <input class="element second" readonly="readonly" data-min="0" data-max="60" data-width="200" data-height="200" data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d" data-angleoffset="180">
-                                <span class="unit secs-title">sec</span>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- end sm-countdown -->
+                        </div><!-- end sm-countdown -->
                     </div><!-- end homeCounter -->
                 </div>
             </div>
