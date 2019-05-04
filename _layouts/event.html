@@ -15,8 +15,8 @@ layout: default
                 </div><!-- end descriptionEvent -->
                 {% if page.picture %}
                 <div class="coverEvent">
-                    <a href="{{page.picture | relative_url}}" class="lightbox">
-                        <img src="{{page.picture | relative_url}}" alt="">
+                    <a href="{{page.picture | relative_url }}" class="lightbox">
+                        <img src="{{page.picture | relative_url }}" alt="">
                     </a>
                 </div><!-- end coverEvent -->
                 {% endif %}
@@ -97,12 +97,12 @@ layout: default
 </div>
 <!-- =============== END EVENT SINGLE ================ -->
 <!-- =============== START MAP ================ -->
-{% if page.gps%}
+{% if site.data.venues[page.venue].gps%}
 <section class="googleMap">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <div id="map-canvas" class="google-map" data-lat="{{page.gps[0]}}" data-long="{{page.gps[1]}}" data-api="{{site.google_api_key}}" data-title="{{page.venue}}" data-description="{{page.location}}"></div>
+                <iframe src="https://www.google.com/maps/embed/v1/place?key={{site.google_api_key}}&q={{site.data.venues[page.venue].gps[0]}},{{site.data.venues[page.venue].gps[1]}}" width="" height=""></iframe>
             </div>
         </div>
     </div>
