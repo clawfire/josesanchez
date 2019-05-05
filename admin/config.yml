@@ -12,7 +12,10 @@ media_folder:        "uploads" # Media files will be stored in the repo under im
 
 collections:
     - name:          "events" # Used in routes, e.g., /admin/collections/blog
-      label:         "Event" # Used in the UI
+      label:         "Events" # Used in the UI
+      singular:      "Event"
+      description:   >
+        All the events where you are putting music on.
       folder:        "_events/" # The path to the folder where the documents are stored
       editor:
           preview:   false
@@ -42,6 +45,7 @@ collections:
               - {label: "Youtube (full URL)", name: "youtube", widget: "string", required: false}
               - {label: "Twitter (username after @)", name: "twitter", widget: "string", required: false}
               - {label: "Instagram (username after @)", name: "instagram", widget: "string", required: false}
+        - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
     - name:          "albums"
       label:         "Music Albums"
       folder:        "_albums"
