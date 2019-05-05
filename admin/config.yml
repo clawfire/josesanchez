@@ -1,0 +1,54 @@
+backend:
+  name:              git-gateway
+  branch:            master # Branch to update (optional; defaults to master)
+
+# This line should *not* be indented
+publish_mode:        editorial_workflow
+# This line should *not* be indented
+media_folder:        "uploads" # Media files will be stored in the repo under images/uploads
+
+collections:
+    - name:          "events" # Used in routes, e.g., /admin/collections/blog
+      label:         "Event" # Used in the UI
+      folder:        "_events/" # The path to the folder where the documents are stored
+      create:        true # Allow users to create new documents in this collection
+      slug:          "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields:        # The fields for each document, usually in front matter
+        - {label: "Layout", name: "layout", widget: "hidden", default: "event"}
+        - {label: "Date", name: "date", widget: "datetime", required: true}
+        - {label: "Venue", name: "venue", widget: "string", required: true}
+        - {label: "Ticket Link", name: "link_ticket", widget: "string"}
+        - {label: "RSVP Link", name: "link_rsvp", widget: "string"}
+        - {label: "Price (in €)", name: "price", widget: "number", default: null, min: 0}
+        - {label: "Picture", name: "picture", widget: "image", allow_multiple: false}
+        - {label: "It's a big event", name: "isBig", widget: "boolean", default: false}
+        - label:     "Brand"
+          name:      "brand"
+          widget:    "object"
+          fields:
+              - {label: "Logo", name: "logo", widget: "image", allow_multiple: false}
+              - {label: "Website", name: "website", widget: "string"}
+        - label:     "Social links"
+          name:      "social"
+          widget:    "object"
+          fields:
+              - {label: "Facebook (full URL)", name: "facebook", widget: "string"}
+              - {label: "Youtube (full URL)", name: "youtube", widget: "string"}
+              - {label: "Twitter (username after @)", name: "twitter", widget: "string"}
+              - {label: "Instagram (username after @)", name: "instagram", widget: "string"}
+    - name:          "albums"
+      label:         "Music Albums"
+      folder:        "_albums"
+      create:        true
+      slug:          "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "album"}
+          - {label: "Date", name: "date", widget: "datetime", required: true}
+          - {label: "Album / Track Title", name: "title", widget: "string", required: true}
+          - label:   "Type"
+            name:    "type"
+            widget:  "select"
+            options: ["Live Set","Podcast","Promo Set"]
+            default: ["Live Set"]
+          - {label: "Listening Url", name: "listen_url", widget: "string", required: true}
+          - {label: "Cover Picture", name: "picture", widget: "image", allow_multiple: false, required: true}
