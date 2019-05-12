@@ -1,5 +1,17 @@
 ---
 layout: default
 ---
-
-{{ content }}
+<!-- =============== START BIOGRAPHY SECTION ================ -->
+<section style="background-image:url({{page.background_picture | relative_url}});" class="biography padding background-properties" id="content">
+    <div class="container">
+        <div class="sectionTitle paddingBottom">
+            <span class="heading-t3"></span>
+            <h2><a href="#">{{page.title}}</a></h2>
+            <span class="heading-b3"></span>
+        </div><!-- end sectionTtile -->
+        <div class="row">
+            {{content}}
+        </div>
+    </div><!-- end container -->
+</section>
+<!-- =============== END BIOGRAPHY SECTION ================ -->
