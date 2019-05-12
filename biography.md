@@ -4,15 +4,21 @@ title: Biography
 ---
 
 <div class="col-sm-6" markdown="1">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+My first music experience as a DJ was on radio (Bel Valley Radio, in Luxembourg) bringing the newest sounds promotions. I then start Djeing in 1996 with vinyls in different bars and clubs in Luxembourg city. It was a great time with a lot of venues. It last for 7 years.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Then I took few years break, life, you know. But I'm back in Luxembourg since 2009, bringing with me some nice tribal drums style and progressive beats.
+
+I Lives in Luxembourg and I'm following what's the spanish LGTB circuit is providing in terms of sounds esthetics. I definitly take my inspiration from it and most of my sounds can be qualified as circuit tracks, which suits perfect for any bar or clubs for any kind of clubbing audience I think.
+
+I had the opportunity to perform at a lot of LGBT+ nights in Europe, from Brussels to Rome, from Paris to Madrid, etc. I definitly feel lucky and honored. I was the headline for Paris Bear Pride, did Rome's Bear Mondays a few times and I had residency in Bruxelles for two years.
 
 </div>
 <div class="col-sm-6" markdown="1">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quibusdam, blanditiis libero voluptatum cumque quod hic debitis delectus sapiente sint asperiores est reiciendis, quaerat quas quidem unde porro fugiat optio!
+Even if my preference goes to house, tribal and circuit sounds, I understand that being a DJ is not just go through a predefined playlist with sync button on. I am always looking to the crowd, how people are reacting to the sounds I play, how people feel about this transition or this effect.
 
-Deleniti nobis id, magni sapiente fugiat incidunt ipsum assumenda accusamus. Sequi accusantium tenetur iure voluptatem nisi aut culpa quidem minima alias, neque aliquid! In aliquam ipsa blanditiis amet, quae harum?
+Over the year, I also expand my knowledge of those kind of implicit mecanism during a gig to the lightshow. Being a team with the light jockey is very important. Light and sounds comes together to create the perfect canvas to let the crowd enjoy the moment. That's why I start investing time and money in meaningfull partnership, growing a small team of technicians and learning myself more about all the other night actors roles and how we can collaborate and benefits to each others.
+
+My goal is to always deliver the best performance for the people here, should it be in a festival in Barcelona or in a club in Luxembourg, my homecountry.
 
 <div class="signature">
     <a href="{{site.site_url}}">José Sanchez</a>
