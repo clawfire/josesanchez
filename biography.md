@@ -15,10 +15,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quibusdam, blan
 Deleniti nobis id, magni sapiente fugiat incidunt ipsum assumenda accusamus. Sequi accusantium tenetur iure voluptatem nisi aut culpa quidem minima alias, neque aliquid! In aliquam ipsa blanditiis amet, quae harum?
 
 <div class="signature">
-    <a href="http://www.emihaze.com/showcase">José Sanchez:</a>
+    <a href="{{site.site_url}}">José Sanchez</a>
     <div class="imgSignuature">
-        <img src="assets/img/content/signature.png" alt="">
+        <img src="{{page.signature_picture | relative_url}}" alt="">
     </div>
 </div>
-
 </div>
