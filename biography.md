@@ -1,5 +1,6 @@
 ---
 title: Biography
+layout: page
 signature_picture: /uploads/signature.png
 ---
 
