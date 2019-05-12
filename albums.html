@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<!-- =============== START BLOG FILTER ================ -->
+	<section class="aquraFilter paddingGrid albumFilter" id="content">
+		<div class="container">
+			<!-- start blog-filter-category -->
+			<div class="categories">
+					<ul class="clearfix" data-option-key="filter">
+						<li><a href="#"><i class="fa fa-filter"></i></a></li>
+						<li> <a href="#" class="selected" data-option-value="*">All</a></li>
+						<li> <a href="#" data-option-value=".promo_set">Promo Sets</a></li>
+						<li> <a href="#" data-option-value=".podcast">Podcasts</a></li>
+						<li> <a href="#" data-option-value=".live_set">Live Sets</a></li>
+						<li> <a href="#" data-option-value=".remix">Remixes</a></li>
+						<li> <a href="#" data-option-value=".mashup">Mashups</a></li>
+					</ul>
+			</div><!--end categories-->
+			<!-- end blog-filter-category -->
+
+			<!-- start filter -->
+			<div class="aqura-filter-content list-albums">
+				<ul class="list-feature clearfix">
+                    {%- for album in site.albums -%}
+					<li class="col-md-3 col-sm-3 col-xs-12 {{album.format|downcase|replace: " ", "_"}} {{album.type|downcase|replace: " ", "_"}}">
+						<div class="album-icon">
+							<span class="thumbs-album">
+								<a href="{{album.url}}"><img width="270" height="270" src="{{album.picture | relative_url}}" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+							</span>
+							<span class="disk"></span>
+						</div><!-- END ALBUM ICON -->
+						<div class="name">
+                            <h3>{{album.title}}</h3>
+                            <p>{{album.type}}</p>
+						</div><!-- end name -->
+					</li>
+                    {%- endfor -%}
+				</ul>
+			</div><!-- end aqura-filter-cotent -->
+			<!-- end filter -->
+		</div><!-- end container -->
+	</section>
+	<!-- =============== END BLOG FILTER ================ -->

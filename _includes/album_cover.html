@@ -14,7 +14,7 @@
         </div>
         <div class="list-albums">
             <ul class="list-feature col-md-12 col-xs-12 col-sm-12">
-                {% for album in site.albums %}
+                {% for album in site.albums limit 4%}
                 <li class="col-md-3 col-sm-3 col-xs-12">
                     <div class="album-icon">
                         <span class="thumbs-album">
