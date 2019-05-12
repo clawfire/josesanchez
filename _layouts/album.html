@@ -1,0 +1,134 @@
+---
+layout: default
+pagination:
+enabled: true
+collection: albums
+---
+<!-- =============== START ALBUM SINGLE ================ -->
+<section class="albumSingle padding background-properties" style="background-image:url(assets/img/subHeader/header.png);">
+    <div class="container">
+        <div class="sectionTitle paddingBottom">
+            <span class="heading-t3"></span>
+            <h2><a href="albumsSingle1.html">{{page.title}}</a></h2>
+            <span class="heading-b3"></span>
+        </div><!-- end sectionTtile -->
+        <div class="row">
+            <div class="col-sm-8">
+                {%- if page.tracks.size > 0 -%}
+                <div class="jp-playlist">
+                    <div class="about-list clearfix">
+                        <span class="about-name">NAME</span>
+                        <span class="about-length">LENGTH</span>
+                    </div>
+                    {%- for track in page.tracks -%}
+                    <div class="trak-item" data-audio="{{track.link}}" data-artist="DJ Sanchez" data-thumbnail="{{page.picture | relative_url}}">
+                        <audio preload="metadata" src="{{track.link}}" title="{{track.name}}"></audio>
+                        <div class="play-pause-button">
+                            <div class="center-y-table">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="name-artist">
+                            <div class="center-y-table">
+                                <h2>
+                                    {{track.name}}
+                                </h2>
+                            </div>
+                        </div>
+                        <time class="trak-duration">
+                            {{track.duration}}
+                        </time>
+                    </div>
+                    {%- endfor -%}
+                </div>
+                {%- endif -%}
+            </div><!-- end-col-sm-8 -->
+            <div class="col-sm-3 col-sm-offset-1">
+                <div class="sidebarAlbum">
+                    <div class="widget">
+                        <h3>Details</h3>
+                        <ul>
+                            <li>Realease Date:<span>{{page.date | date: "%B %e, %Y" }}</span></li>
+                            <li>Catalog:<span>{{page.catalog | default: "n/a"}} </span></li>
+                            <li>Label:<span>{{page.label | default: "n/a"}} </span></li>
+                            <li>Fomat:<span>{{page.format | default: "unknown"  }} </span></li>
+                        </ul>
+                    </div><!-- end widget -->
+                    <div class="widget">
+                        <h3>Instagram</h3>
+                        <div class="instagram-widget">
+                            <ul id="instagram-sidebar-widget" class="clearfix"></ul>
+                        </div>
+                    </div><!-- end widget -->
+                    <div class="widget">
+                        <h3>Available On</h3>
+                        <section>
+                            <ul id='services'>
+                                {%- for link in page.links -%}
+                                {%- case link.platform -%}
+                                {%- when 'lastfm' -%}
+                                <li>
+                                    <a href="{{link.url}}">
+                                        <div><i class="fa fa-lastfm"></i></div>
+                                    </a>
+                                </li>
+                                {%- when 'soundcloud' -%}
+                                <li>
+                                    <a href="{{link.url}}">
+                                        <div><i class="fa fa-soundcloud"></i></div>
+                                    </a>
+                                </li>
+                                {%- when 'itunes' -%}
+                                <li>
+                                    <a href="{{link.url}}">
+                                        <div><i class="fa fa-apple"></i></div>
+                                    </a>
+                                </li>
+                                {%- when 'spotify' -%}
+                                <li>
+                                    <a href="{{link.url}}">
+                                        <div><i class="fa fa-spotify"></i></div>
+                                    </a>
+                                </li>
+                                {%- when 'amazon' -%}
+                                <li>
+                                    <a href="{{link.url}}">
+                                        <div><i class="fa fa-amazon"></i></div>
+                                    </a>
+                                </li>
+                                {%- else -%}
+                                {%- endcase -%}
+
+                                {%- endfor -%}
+                            </ul>
+                        </section>
+                    </div><!-- end widget -->
+                </div><!-- end sidebarAlbum -->
+            </div><!-- end col-sm-3 col-sm-offset-1 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- =============== END ALBUM SINGLE ================ -->
+
+<!-- =============== START PAGINATION ================ -->
+<div class="section-block  bkg-grey-ultralight pagination-2">
+    <div class="row full-width ">
+        <div class="col-sm-6 leftHover" style="background-image: url('assets/img/albums/albFooter.jpg');">
+            {% if page.previous.url %}
+            <a href="{{page.previous.url}}" class="pagination-previous">
+                <small>Prev</small>
+                <span>{{page.previous.title}}</span>
+            </a>
+            {% endif %}
+        </div>
+        <div class="col-sm-6 rightHover" style="background-image: url('assets/img/albums/albFooter.jpg');">
+            {%- if page.next.url -%}
+            <a href="{{page.next.url}}" class="pagination-next ">
+                <small>Next</small>
+                <span>{{page.next.title}}</span>
+            </a>
+            {%- endif -%}
+        </div>
+    </div>
+</div>
+<!-- =============== END PAGINATION ================ -->
