@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Biography
+signature_picture: /uploads/signature.png
 ---
 
 <div class="col-sm-6" markdown="1">
