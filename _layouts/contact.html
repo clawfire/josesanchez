@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<!-- =============== START CONTACT ================ -->
+<section class="contactSingle padding background-properties" id="content" style="background-image:url({{page.background_picture | relative_url}});">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="contactTop">
+                    <h2>Contact Information</h2>
+                    <h4>{{page.contact_info.address}}</h4>
+                    <p>{{page.contact_info.description}}</p>
+                    <div class="contactInfo">
+                        <ul>
+                            <li>Email: <a href="{{page.contact_info.email|prepend: "mailto:"}}">{{page.contact_info.email}}</a></li>
+                            <li>Phone: <a href="{{page.contact_info.email|prepend: "tel:"}}">{{page.contact_info.phone}}</a></li>
+                            <li>Fax: <a href="https://www.youtube.com/watch?v=CNtt1yhDAWQ">{{page.contact_info.fax}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- end col-sm-4 -->
+            <div class="col-sm-7 col-sm-offset-1">
+                <div class="singleBlogForm">
+                    <h2>Get in Touch</h2>
+                    <form name="contact" method="post" class="comment-form" data-netlify="true" netlify-honeypot="bot-field">
+                        <input id="author" name="author" type="text" value="" aria-required="true" required placeholder="First Name *">
+                        <input id="lastName" name="lastname" type="text" value="" aria-required="true" placeholder="Last Name">
+                        <input id="subject" name="subject" type="text" value="" placeholder="Subject* " required>
+                        <input id="address" name="email" type="email" value="" placeholder="Email Address* " required>
+                        <textarea name="message" placeholder="Message..." rows="6" required></textarea>
+                        <p class="form-submit">
+                            <input name="submit" type="submit" id="submit" value="Send Email">
+                        </p>
+                    </form>
+                </div><!-- end contactForm -->
+            </div><!-- end col-sm-7 col-sm-offset-1 -->
+        </div>
+    </div><!-- end container -->
+</section>
+<!-- =============== END CONTACT ================ -->
+<!-- =============== START MAP ================ -->
+<section class="googleMap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key={{site.google_api_key}}&q={{page.contact_info.gps[0]}},{{page.contact_info.gps[1]}}" width="" height=""></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============== END MAP ================ -->
