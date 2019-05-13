@@ -5,7 +5,9 @@
     {% include file_loarder.html %}
     {% if page.is_event %}
         {% include breadcrumb-event.html %}
-    {% else %}
+    {% elsif page.is_contact %}
+        {%- include breadcrumb-page.html -%}
+    {%- else -%}
         {% include breadcrumb.html %}
     {% endif %}
     {{ content }}
