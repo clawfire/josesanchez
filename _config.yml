@@ -24,6 +24,8 @@ social:
     instagram:      dj_josesanchez
 
 # Build settings
+sass:
+    sass_dir:       _sass
 markdown:           kramdown
 plugins:
   - jekyll-feed
