@@ -43,7 +43,7 @@ layout: default
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                {%- assign gps = page.contact_info.gps | split: "[" | last | split: "]" | first | split ',' | reverse | join: ','-%}
+                {%- assign gps = page.contact_info.gps | split: "[" | last | split: "]" | first | split: ',' | reverse | join: ','-%}
                 <iframe src="https://www.google.com/maps/embed/v1/place?key={{site.google_api_key}}&q={{gps}}" width="" height=""></iframe>
             </div>
         </div>
