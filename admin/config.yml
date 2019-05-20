@@ -23,6 +23,24 @@ collections:
                 - { label: 'Body', name: 'body', widget: 'markdown' }
                 - { label: 'Signature Picture', name: 'signature_picture', widget: 'image', required: false, allow_multiple: false }
                 - { label: 'Background Picture', name: 'background_picture', widget: 'image', required: false, allow_multiple: false , hint: "Should be 1920 x 1080 or same ratio. Will be cropped otherwise."}
+          - label:                "Contact Page"
+            name:                 "contact"
+            file:                 "contact.md"
+            fields:
+                - { label: 'Title', name: 'title', default: 'Contact' }
+                - { label: 'Layout', name: 'title', widget: 'hidden', default: 'contact' }
+                - { label: 'This is contact page', name: 'is_contact', widget: 'hidden', default: 'true' }
+                - label:          'Contact informations'
+                  name:           'contact_info'
+                  widget:         'object'
+                  fields:
+                      - {label: "Street Address", name: "address", widget: "string"}
+                      - {label: "Email", name: "email", widget: "string"}
+                      - {label: "Phone", name: "phone", widget: "string"}
+                      - {label: "Fax", name: "fax", widget: "string"}
+                      - {label: "Description", name: "description", widget: "markdown"}
+                      - {label: "GPS coordinates for the map", name: "gps", widget: "map"}
+                - { label: 'Body', name: 'body', widget: 'markdown' }
     - name:                       "events" # Used in routes, e.g., /admin/collections/blog
       label:                      "Events" # Used in the UI
       singular:                   "Event"
