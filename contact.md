@@ -9,7 +9,7 @@ contact_info:
     fax: "What ?"
     description: "I don't receive random people from the internet at home. But you can send me letter or use it as reference into for me into your CRM or whatever related to business. No creeps. Thanks.<br>
     Also I don't have a VAT number since I don't need one on my bills. All the fines lines can be find on them."
-    gps: [49.6151504,6.1601745]
+    gps: { type: "Point", coordinates: [49.6151504,6.1601745] }
 ---
 
 Your time is limited, don’t waste it living someone else’s life. Don’t be trapped
