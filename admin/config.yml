@@ -28,7 +28,7 @@ collections:
             file:                 "contact.md"
             fields:
                 - { label: 'Title', name: 'title', default: 'Contact' }
-                - { label: 'Layout', name: 'title', widget: 'hidden', default: 'contact' }
+                - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'contact' }
                 - { label: 'This is contact page', name: 'is_contact', widget: 'hidden', default: 'true' }
                 - label:          'Contact informations'
                   name:           'contact_info'

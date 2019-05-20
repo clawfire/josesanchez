@@ -1,5 +1,6 @@
 ---
 title: Contact
+layout: contact
 is_contact: true
 contact_info:
   address: '200 rue de Trèves, L2630 Luxembourg, Luxembourg'
