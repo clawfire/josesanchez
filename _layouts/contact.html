@@ -43,7 +43,8 @@ layout: default
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <iframe src="https://www.google.com/maps/embed/v1/place?key={{site.google_api_key}}&q={{page.contact_info.gps[0]}},{{page.contact_info.gps[1]}}" width="" height=""></iframe>
+                {%- assign gps = page.contact_info.gps | split: "[" | last | split: "]" | first -%}
+                <iframe src="https://www.google.com/maps/embed/v1/place?key={{site.google_api_key}}&q={{gps}}" width="" height=""></iframe>
             </div>
         </div>
     </div>
