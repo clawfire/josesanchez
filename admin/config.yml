@@ -12,8 +12,16 @@ media_folder:                     "uploads" # Media files will be stored in the 
 
 collections:
     - name:                       "pages"
-      label:                      "Pages"
+      label:                      "Pages & Config"
       files:
+          - name:                 "videos"
+            label:                "Videos"
+            file:                 "_data/videos.yml"
+            fields:
+                - label:          Videos
+                  name:           videos
+                  widget:         list
+                  field:                {label: Url, name: url , widget: string, }
           - label:                "Biography Page"
             name:                 "biography"
             file:                 "biography.md"
@@ -131,11 +139,3 @@ collections:
                 - {label: "URL", name: "url", widget: "string"}
           - {label: "Cover Picture", name: "picture", widget: "image", allow_multiple: false}
           - {label: "Background Picture", name: "background_picture", widget: "image", allow_multiple: false, required: false, hint: "1920x1080 picture. Will be cropped"}
-    - name:                       "videos"
-      label:                      "Videos"
-      file:                       "_data/videos.yml"
-      fields:
-          - label:                Videos
-            name:                 videos
-            widget:               list
-            field:                {label: Url, name: url , widget: string, }
