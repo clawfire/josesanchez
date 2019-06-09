@@ -1,6 +1,6 @@
 ---
 layout: album
-date: 2019-06-09T17:52:18.644Z
+date: 2019-05-29T17:52:18.644Z
 title: Depeche Mode - Master and Servant
 type: Remix
 format: Streaming
