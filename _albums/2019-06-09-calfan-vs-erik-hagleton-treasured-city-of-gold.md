@@ -1,7 +1,7 @@
 ---
 layout: album
 date: 2019-05-08T22:00:00.000Z
-Catalog: '@'
+Catalog: ''
 title: Calfan vs Erik Hagleton - Treasured City of Gold
 type: Mashup
 format: Streaming
