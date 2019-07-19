@@ -10,7 +10,7 @@
     {% assign bigEvent = site.events|where:'isBig',true|sort: 'date'| reverse | first %}
     {% if bigEvent %}{% include big_event.html event=bigEvent%}{% endif %}
     {% include twitter_section.html %}
-    {% include video_section.html %}
+    {% if site.data.videos %}{% include video_section.html %}{% endif %}
     {% include gallery_section.html %}
     {% include footer.html %}
 </body>
