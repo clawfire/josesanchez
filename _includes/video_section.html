@@ -1,0 +1,20 @@
+<!-- =============== START VIDEO SECTION ================ -->
+	<section class="videoHome hide-section padding">
+		<div class="container">
+			<div class="row">
+				<div class="sectionTitle">
+					<span class="heading-t3"></span>
+					<h2><a href="video.html">Uploaded Video</a></h2>
+					<span class="heading-b3"></span>
+					<p>Check out my latest videos and follow me on <a href="{{site.social.youtube}}">Youtube</a> & <a href="{{site.social.vimeo}}">Vimeo</a> to view more.</p>
+				</div><!-- end sectionTtile -->
+				{%- assign videos = site.data.videos | reverse -%}
+				{%- for video in videos limit:3 -%}
+                    <div class="col-sm-4">
+                        <iframe width="560" height="315" src="{{video.url}}"  allowfullscreen></iframe>
+                    </div><!-- end col-sm-4 -->
+				{%- endfor -%}
+			</div>
+		</div>
+	</section>
+	<!-- =============== END VIDEO SECTION ================ -->
