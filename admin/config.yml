@@ -13,6 +13,7 @@ media_folder:                     "uploads" # Media files will be stored in the 
 collections:
     - name:                       "pages"
       label:                      "Pages & Config"
+      sort:                       "title:asc"
       files:
           - name:                 "videos"
             label:                "Videos"
@@ -52,6 +53,7 @@ collections:
     - name:                       "events" # Used in routes, e.g., /admin/collections/blog
       label:                      "Events" # Used in the UI
       singular:                   "Event"
+      sort:                       "date:desc"
       description:                >
         All the events where you are putting music on.
       folder:                     "_events/" # The path to the folder where the documents are stored
@@ -89,6 +91,7 @@ collections:
       label:                      "Music Albums"
       folder:                     "_albums"
       create:                     true
+      sort:                       "date:desc"
       editor:
         preview:                  false
       summary:                    "{{title}} - {{type}}"
