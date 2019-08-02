@@ -27,11 +27,23 @@ Limbo:
       - 6.1313334999999825
 XL Sauna:
     location:      'Saarbrucken, Germany'
+    brand:
+      logo:        /uploads/xlsauna-3x.png
+      website:     'http://xl-sauna.de/'
+    social:
+        facebook:  https://www.facebook.com/XL-Sauna-Lounge-147316611972373/
+        instagram: xl_sauna_lounge
     gps:
       - 49.22381
       - 7.026290000000017
 Steambeats:
     location:      'Saarbrucken, Germany'
+    brand:
+      logo:        /uploads/xlsauna-3x.png
+      website:     'http://xl-sauna.de/'
+    social:
+        facebook:  https://www.facebook.com/XL-Sauna-Lounge-147316611972373/
+        instagram: xl_sauna_lounge
     gps:
       - 49.22381
       - 7.026290000000017
