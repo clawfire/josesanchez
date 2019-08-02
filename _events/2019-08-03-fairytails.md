@@ -6,7 +6,7 @@ link_ticket: 'https://portal.gaygotickets.com/#/events/64977325'
 link_rsvp: 'https://www.facebook.com/events/1084350358434848/'
 price: 15
 picture: /uploads/f11cab71.jpeg
-isBig: true
+isBig: false
 brand:
   logo: /uploads/fairytails.png
   website: 'https://www.fairytails.lu/'
@@ -15,6 +15,7 @@ social:
   instagram: fairytails_parties
   youtube: 'https://www.youtube.com/channel/UCY0ahdIQdYNJdahqfRlgwRA'
 ---
+
 # Fairytails Factory Boyz
 
 Gay Clubbing Party!
@@ -27,5 +28,5 @@ Inspiré par les soirées Factory de Andy Warhol ainsi que par le Studio 54, Fai
 
 ## DJs
 
-* Ale Amaral (https://soundcloud.com/djaleamaral)
-* DJ José Sanchez (https://soundcloud.com/belosso)
+-   Ale Amaral (<https://soundcloud.com/djaleamaral>)
+-   DJ José Sanchez (<https://soundcloud.com/belosso>)
