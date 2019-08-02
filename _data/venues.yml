@@ -93,6 +93,7 @@ Woof Madrid:
 Aqua Club:
     location:      Torremolinos, Malaga, España
     brand:
+        logo:      /uploads/aqua-club.png
         website:   https://www.facebook.com/aquaclubtorremolinos/
     social:
         facebook:  https://www.facebook.com/aquaclubtorremolinos/
@@ -103,6 +104,7 @@ Aqua Club:
 Backstage:
     location:      Perpignan, France
     brand:
+        logo:      /uploads/cropped-logo-header-site.png
         website:   http://backstage-perpignan.com/
     social:
         facebook:  https://www.facebook.com/backstage.perpignan/
@@ -113,6 +115,7 @@ Backstage:
 BackstageXL:
     location:      Perpignan, France
     brand:
+        logo:      /uploads/cropped-logo-header-site.png
         website:   http://backstage-perpignan.com/
     social:
         facebook:  https://www.facebook.com/backstage.perpignan/
@@ -120,3 +123,15 @@ BackstageXL:
     gps:
         - 42.6947
         - 2.88919999999996
+Fairytails:
+    location:      Luxembourg, Luxembourg
+    brand:
+        logo:      /uploads/fairytails.png
+        website:   https://www.fairytails.lu/
+    social:
+        facebook:  https://www.facebook.com/FairyTailsLuxembourg/
+        instagram: fairytails_parties
+        youtube:   https://www.youtube.com/channel/UCY0ahdIQdYNJdahqfRlgwRA
+    gps:
+        - 49.6017863
+        - 6.1341412
