@@ -100,3 +100,23 @@ Aqua Club:
     gps:
         - 36.6218328
         - -4.4982728
+Backstage:
+    location:      Perpignan, France
+    brand:
+        website:   http://backstage-perpignan.com/
+    social:
+        facebook:  https://www.facebook.com/backstage.perpignan/
+        instagram: backstagebargay
+    gps:
+        - 42.6918
+        - 2.8869399999999814
+BackstageXL:
+    location:      Perpignan, France
+    brand:
+        website:   http://backstage-perpignan.com/
+    social:
+        facebook:  https://www.facebook.com/backstage.perpignan/
+        instagram: backstagebargay
+    gps:
+        - 42.6947
+        - 2.88919999999996
