@@ -12,8 +12,17 @@ media_folder:                     "uploads" # Media files will be stored in the 
 
 collections:
     - name:                       "pages"
-      label:                      "Pages"
+      label:                      "Pages & Config"
+      sort:                       "title:asc"
       files:
+          - name:                 "videos"
+            label:                "Videos"
+            file:                 "_data/videos.yml"
+            fields:
+                - label:          Video Link
+                  name:           url
+                  widget:         string
+                  hint:           "Plese only youtube video at the moment."
           - label:                "Biography Page"
             name:                 "biography"
             file:                 "biography.md"
@@ -44,6 +53,7 @@ collections:
     - name:                       "events" # Used in routes, e.g., /admin/collections/blog
       label:                      "Events" # Used in the UI
       singular:                   "Event"
+      sort:                       "date:desc"
       description:                >
         All the events where you are putting music on.
       folder:                     "_events/" # The path to the folder where the documents are stored
@@ -51,6 +61,7 @@ collections:
           preview:                false
       summary:                    "{{year}}/{{month}}/{{day}} - {{venue}}"
       create:                     true # Allow users to create new documents in this collection
+      identifier_field:           venue
       slug:                       "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
       fields:                     # The fields for each document, usually in front matter
         - {label: "Layout", name: "layout", widget: "hidden", default: "event"}
@@ -80,6 +91,7 @@ collections:
       label:                      "Music Albums"
       folder:                     "_albums"
       create:                     true
+      sort:                       "date:desc"
       editor:
         preview:                  false
       summary:                    "{{title}} - {{type}}"

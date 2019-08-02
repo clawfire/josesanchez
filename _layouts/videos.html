@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<!-- ================================================== -->
+<!-- =============== VIDEO GALLERY ================ -->
+<!-- ================================================== -->
+<section class="videoG padding" id="content">
+	<div class="videoInner">
+		<div class="content">
+			<div class="container-fluid">
+				<div class="row">
+                    {%- for video in site.data.videos -%}
+					<div class="col-sm-4">
+						<div class="videoTitle">
+							<iframe width="560" height="315" src="{{video.url}}"  allowfullscreen></iframe>
+						</div>
+					</div>
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ================================================== -->
+<!-- =============== END VIDEO GALLERY ================ -->
+<!-- ================================================== -->

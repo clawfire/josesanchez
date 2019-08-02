@@ -4,7 +4,7 @@ pagination:
   enabled: true
   collection: events
 ---
-<div class="singleEvent padding background-properties" style="background-image: url(assets/img/events/home-events-1.jpg);">
+<div class="singleEvent padding background-properties" style="background-image: url({{page.background_picture | default: "assets/img/events/home-events-1.jpg"| relative_url}});">
     <div class="container">
         <div class="sectionTitle paddingBottom">
             <span class="heading-t3"></span>
