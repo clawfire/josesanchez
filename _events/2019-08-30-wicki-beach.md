@@ -19,9 +19,9 @@ Wicki Beach presents
 
 Is an Concept for House Music Lovers wich is taking over the biggest Beach Club in Luxembourg on the 30th of August 2019, after our Big Success with Lost Frequencies we would like to introduce you KUNGS with his hits:
 
-* https://m.youtube.com/watch?v=2Y6Nne8RvaA
-* https://m.youtube.com/watch?v=0SVk3adkchY
-* https://m.youtube.com/watch?v=Nf-FLiO4p3c
+* <https://m.youtube.com/watch?v=2Y6Nne8RvaA>
+* <https://m.youtube.com/watch?v=0SVk3adkchY>
+* <https://m.youtube.com/watch?v=Nf-FLiO4p3c>
 
 ### Line up:
 
@@ -36,7 +36,7 @@ Wicki Sensation will give you that Summer Beach Feeling that time in the Day whe
 ### Entrance:
 
 Presale: 25 euros 
-https://e-ticket.lu/de/detail/7223
+<https://e-ticket.lu/de/detail/7223>
 
 Doors: 35 euros
 
