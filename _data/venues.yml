@@ -77,7 +77,8 @@ Metz Pride Village:
 Melusina:
     location: Luxembourg, Luxembourg
     brand:
-        logo: https://www.melusina.lu/site-root/wp-content/themes/melusina/images/melu_shadow.png
+        logo: >-
+            https://www.melusina.lu/site-root/wp-content/themes/melusina/images/melu_shadow.png
         website: http://melusina.lu
     social:
         twitter: clubmelusina
@@ -148,3 +149,15 @@ Festish:
     gps:
         - 49.3055
         - 6.152119999999968
+Euphoria Dublin:
+    location: Dublin, Dublin
+    brand:
+        logo: >-
+            uploads/m2qwnjq2n2y1mwjimtm1ytg3ogvhmgq2otblndy4otdyzivfvycrtcpwrt1sgfilahr0cdovl21lzglhlmfkc2ltzy5jb20vytu1mguxmtrinzu5nzjimjk2yjhmogrkogqynwm5mzg5zdhkyzhjodcxntblywjiogjkzdlhntc5mjg2mwzknc5qcgd8fhx8fhw0odb4mti3fgh0dha6ly93d3cuywr2zxj0cy5pzs9zdgf0.jpg
+    social:
+        instagram: https://www.instagram.com/euphoriaclubdublin/
+        facebook: https://www.facebook.com/euphoriadublin/
+        twitter: euphoriadublin
+    gps:
+        - 53.3464453
+        - -6.2578726
