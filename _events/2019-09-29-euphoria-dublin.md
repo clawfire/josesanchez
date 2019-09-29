@@ -13,8 +13,8 @@ brand:
     /uploads/m2qwnjq2n2y1mwjimtm1ytg3ogvhmgq2otblndy4otdyzivfvycrtcpwrt1sgfilahr0cdovl21lzglhlmfkc2ltzy5jb20vytu1mguxmtrinzu5nzjimjk2yjhmogrkogqynwm5mzg5zdhkyzhjodcxntblywjiogjkzdlhntc5mjg2mwzknc5qcgd8fhx8fhw0odb4mti3fgh0dha6ly93d3cuywr2zxj0cy5pzs9zdgf0.jpg
 social:
   facebook: 'https://www.facebook.com/euphoriadublin/'
-  instagram: 'https://www.instagram.com/euphoriaclubdublin/'
-  twitter: 'https://twitter.com/euphoriadublin'
+  instagram: euphoriaclubdublin
+  twitter: euphoriadublin
 ---
 We are back for one fantastic start to October when we bring the Luxembourg party brand Fairytails to Dublin for the very first time.
 
