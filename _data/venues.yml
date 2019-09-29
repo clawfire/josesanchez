@@ -161,3 +161,15 @@ Euphoria Dublin:
     gps:
         - 53.3464453
         - -6.2578726
+Woof Luxembourg:
+    location: Luxembourg, Luxembourg
+    brand:
+        logo: uploads/2019/05/woof-logo.png
+        website: http://woofmenonly.com
+    social:
+        instagram: woofluxembourg
+        facebook: https://www.facebook.com/woofluxembourg/
+        youtube:
+    gps:
+        - 49.5983595
+        - 6.1282248
