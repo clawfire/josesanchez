@@ -10,6 +10,11 @@ Scotts:
     gps:
         - 49.6085767
         - 6.1361146
+    description: >-
+        Scott's Pub is located in the heart of Luxembourg City down in the picturesque, medieval valley named the "Grund"...
+
+        This Pub was established in 1985 and has since been a great meeting place for generations of people of all age groups and backgrounds. It is today still a very popular hot-spot where you can go out and mingle with a fun, international crowd of people. On weekends enjoy hit music, both old and new, played by our DJ's or live-bands. On weekdays you can sit back in a chilled atmosphere on our spacious sunny terrace, one of the best terraces in Luxembourg, and enjoy the view of the River Alzette right in front you, surrounded by quaint, old buildings and the remains of the old castle walls far away from the noise of traffic and modern life. And yet you're only 5 minutes walk from the center of Luxembourg...
+
 Bar Rouge:
     location: Luxembourg, Luxembourg
     brand:
@@ -28,7 +33,7 @@ Limbo:
         - 49.6124368
         - 6.1313334999999825
 XL Sauna:
-    location: Saarbrucken, Germany
+    location: 🇩🇪 Saarbrucken, Germany
     brand:
         logo: /uploads/xlsauna-3x.png
         website: http://xl-sauna.de/
@@ -39,7 +44,7 @@ XL Sauna:
         - 49.22381
         - 7.026290000000017
 Steambeats:
-    location: Saarbrucken, Germany
+    location: 🇩🇪 Saarbrucken, Germany
     brand:
         logo: /uploads/xlsauna-3x.png
         website: http://xl-sauna.de/
@@ -82,7 +87,7 @@ Wicki Beach:
         - 49.496735801293795
         - 5.952130434731089
 Metz Pride Village:
-    location: Metz, France
+    location: 🇫🇷 Metz, France
     gps:
         - 49.11518993927727
         - 6.172662287427329
@@ -100,12 +105,12 @@ Melusina:
         - 49.6112348146306
         - 6.141228675842285
 Woof Madrid:
-    location: Madrid, Luxembourg
+    location: 🇪🇸 Madrid, Spain
     gps:
         - 40.4253029
         - -3.7137318
 Aqua Club:
-    location: Torremolinos, Malaga, España
+    location: 🇪🇸 Torremolinos, Malaga, España
     brand:
         logo: /uploads/aqua-club.png
         website: https://www.facebook.com/aquaclubtorremolinos/
@@ -116,7 +121,7 @@ Aqua Club:
         - 36.6218328
         - -4.4982728
 Backstage:
-    location: Perpignan, France
+    location: 🇫🇷 Perpignan, France
     brand:
         logo: /uploads/cropped-logo-header-site.png
         website: http://backstage-perpignan.com/
@@ -127,7 +132,7 @@ Backstage:
         - 42.6918
         - 2.8869399999999814
 BackstageXL:
-    location: Perpignan, France
+    location: 🇫🇷 Perpignan, France
     brand:
         logo: /uploads/cropped-logo-header-site.png
         website: http://backstage-perpignan.com/
@@ -150,7 +155,7 @@ Fairytails:
         - 49.6017863
         - 6.1341412
 Festish:
-    location: Uckange, France
+    location: 🇫🇷 Uckange, France
     brand:
         website: http://festish.fr
     social:
@@ -162,7 +167,7 @@ Festish:
         - 49.3055
         - 6.152119999999968
 Euphoria Dublin:
-    location: Dublin, Dublin
+    location: 🇮🇪 Dublin, Dublin
     brand:
         logo: >-
             uploads/m2qwnjq2n2y1mwjimtm1ytg3ogvhmgq2otblndy4otdyzivfvycrtcpwrt1sgfilahr0cdovl21lzglhlmfkc2ltzy5jb20vytu1mguxmtrinzu5nzjimjk2yjhmogrkogqynwm5mzg5zdhkyzhjodcxntblywjiogjkzdlhntc5mjg2mwzknc5qcgd8fhx8fhw0odb4mti3fgh0dha6ly93d3cuywr2zxj0cy5pzs9zdgf0.jpg
@@ -186,7 +191,7 @@ Woof Luxembourg:
         - 49.5983595
         - 6.1282248
 L'endroit:
-    location: Metz, Luxembourg
+    location: 🇫🇷 Metz, Luxembourg
     brand:
         logo: uploads/wzYhyZhr_400x400_clipped_rev_2.png
         website: https://www.facebook.com/pg/lendroitmetz
@@ -196,3 +201,5 @@ L'endroit:
     gps:
         - 49.117373
         - 6.171771
+    description: >-
+        Haut lieu de la vie LGBT Messine, L'endroit (avec l'appart juste en face) acceuille le public depuis des années pour des soirées à thème, dans l'ancienne demeure de Voltaire.

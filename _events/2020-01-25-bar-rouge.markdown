@@ -2,6 +2,5 @@
 layout: event
 date: 2020-01-25T23:00:00.000Z
 venue: Bar Rouge
-price: ''
 isBig: false
 ---

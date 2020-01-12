@@ -1,0 +1,6 @@
+---
+layout: event
+date: 2020-02-01T23:00:00.000Z
+venue: L'endroit
+isBig: false
+---

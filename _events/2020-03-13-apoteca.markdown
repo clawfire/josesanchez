@@ -1,6 +1,6 @@
 ---
 layout: event
-date: 2020-01-18T21:00:00.000Z
+date: 2020-03-13T21:00:00.000Z
 venue: Apoteca
 isBig: false
 ---
