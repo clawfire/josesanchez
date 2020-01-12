@@ -21,6 +21,7 @@ Bar Rouge:
     gps:
         - 49.6132061
         - 6.127195700000016
+    description: Chic place where you can find the best house music in a family atmosphere !
 Limbo:
     location: Luxembourg, Luxembourg
     gps:
@@ -59,6 +60,17 @@ Apoteca:
     gps:
         - 49.6113792
         - 6.1329316
+    description: >-
+        Hidden away in the heart of the city, Apoteca Bar&Club offers all of the best aspects of nightlife in an elegant decor under vaulted stone ceilings.
+
+        It is the perfect place to unwind with a mix of classic and modern cocktail concoctions, an original bar menu, and a seductive blend of music spun by savvy DJs.
+
+        There is also a large wine cellar that accommodates an extensive selection of bottles from all over the world, guaranteed to leave all you wine lovers spoiled for choice.
+
+        On the weekend, the bar transitions into a nightclub open until the early hours of the morning.
+
+        The buzzing dancefloor and electric atmosphere combine to create a vibe which makes Apoteca a hard to leave venue.
+
 Wicki Beach:
     location: Esch sur Alzette, Luxembourg
     brand:

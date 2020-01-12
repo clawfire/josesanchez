@@ -6,9 +6,9 @@
             <div class="breadcrumb-fullscreen-parent phone-menu-bg ">
                 <div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay" style="background-image: radial-gradient(circle, rgba(0,0,0,0.5), rgba(0,0,0,0)),url('{{"/assets/img/header/header.png"|relative_url}}');" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
                     <div class="singleCounter">
-                        {% if page.brand.logo %}
+                        {% if site.data.venues[page.venue].brand.logo %}
                         <div class="SingleEventTitle">
-                            <a href="{{page.brand.website}}" target="_blank"><img src="{{page.brand.logo|relative_url}}" alt="Event"></a>
+                            <a href="{{site.data.venues[page.venue].brand.website}}" target="_blank"><img src="{{site.data.venues[page.venue].brand.logo|relative_url}}" alt="Event" width="300px"></a>
                         </div>
                         {% endif %}
 

@@ -8,13 +8,17 @@ pagination:
     <div class="container">
         <div class="sectionTitle paddingBottom">
             <span class="heading-t3"></span>
-            <h2><a href="{{page.brand.website}}" target="_blank">Description</a></h2>
+            <h2><a href="{{site.data.venues[page.venue].brand.website}}" target="_blank">Description</a></h2>
             <span class="heading-b3"></span>
         </div><!-- end sectionTtile -->
         <div class="row">
             <div class="col-sm-8">
                 <div class="descriptionEvent">
-                    {{ content }}
+                    {% if content.size == 1 %}
+                        {{site.data.venues[page.venue].description | markdownify}}
+                    {% else %}
+                        {{ content }}
+                    {% endif %}
                 </div><!-- end descriptionEvent -->
                 {% if page.picture %}
                 <div class="coverEvent">
@@ -43,7 +47,7 @@ pagination:
                     </div><!-- end widget -->
                     <div class="widget">
                         <h3>Twitter</h3>
-                        <a class="twitter-timeline" href="https://twitter.com/{{page.social.twitter | default: site.social.twitter}}" data-height="500" data-link-color="#E1904A">Tweets by @{{page.social.twitter}}</a>
+                        <a class="twitter-timeline" href="https://twitter.com/{{site.data.venues[page.venue].social.twitter | default: site.social.twitter}}" data-height="500" data-link-color="#E1904A">Tweets by @{{site.data.venues[page.venue].social.twitter | default: site.social.twitter }}</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div><!-- end widget -->
                     <div class="widget">
@@ -58,23 +62,23 @@ pagination:
                           <ul id='services'>
                             <li>
                               <div>
-                                  <a href="{{page.social.facebook|default: site.social.facebook}}" title="Discover on Facebook"><i class="fa fa-facebook"></i></a>
+                                  <a href="{{site.data.venues[page.venue].social.facebook|default: site.social.facebook}}" title="Discover on Facebook"><i class="fa fa-facebook"></i></a>
                               </div>
                             </li>
                             <li>
                                 <div>
-                                    <a href="{{page.social.twitter|default: site.social.twitter|prepend: "https://twitter.com/"}}" title="See tweets"><i class="fa fa-twitter"></i></a>
+                                    <a href="{{site.data.venues[page.venue].social.twitter|default: site.social.twitter|prepend: "https://twitter.com/"}}" title="See tweets"><i class="fa fa-twitter"></i></a>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <a href="{{page.social.instagram|default: site.social.instagram|prepend: "https://instagram.com/"}}" title="See pictures on Instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="{{site.data.venues[page.venue].social.instagram|default: site.social.instagram|prepend: "https://instagram.com/"}}" title="See pictures on Instagram"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </li>
-                            {% if page.social.youtube %}
+                            {% if site.data.venues[page.venue].social.youtube %}
                             <li>
                                 <div>
-                                    <a href="{{page.social.youtube}}" title="Watch videos of {{page.venue}} on Youtube"><i class="fa fa-youtube"></i></a>
+                                    <a href="{{site.data.venues[page.venue].social.youtube}}" title="Watch videos of {{page.venue}} on Youtube"><i class="fa fa-youtube"></i></a>
                                 </div>
                             </li>
                             {% endif %}
