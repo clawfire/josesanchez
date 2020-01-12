@@ -3,12 +3,6 @@ layout: event
 date: 2019-11-15T21:00:00.000Z
 venue: Scotts
 isBig: false
-brand:
-  website: 'http://www.scotts-pub.com/'
-social:
-  facebook: 'https://www.facebook.com/scottspubluxembourg'
-  instagram: scottspublux
-  youtube: 'https://www.youtube.com/watch?v=TIQs9GTTaMg'
 ---
 
 Scott's Pub is located in the heart of Luxembourg City down in the picturesque, medieval valley named the "Grund"...
