@@ -185,3 +185,14 @@ Woof Luxembourg:
     gps:
         - 49.5983595
         - 6.1282248
+L'endroit:
+    location: Metz, Luxembourg
+    brand:
+        logo: uploads/wzYhyZhr_400x400_clipped_rev_2.png
+        website: https://www.facebook.com/pg/lendroitmetz
+    social:
+        facebook: https://www.facebook.com/pg/lendroitmetz
+        twitter: lendroitmetz
+    gps:
+        - 49.117373
+        - 6.171771
