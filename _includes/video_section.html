@@ -8,7 +8,7 @@
 					<span class="heading-b3"></span>
 					<p>Check out my latest videos and follow me on <a href="{{site.social.youtube}}">Youtube</a> & <a href="{{site.social.vimeo}}">Vimeo</a> to view more.</p>
 				</div><!-- end sectionTtile -->
-				{%- assign videos = site.data.videos | reverse -%}
+				{%- assign videos = site.data.videos -%}
 				{%- for video in videos limit:3 -%}
                     <div class="col-sm-4">
                         <iframe width="560" height="315" src="{{video.url}}"  allowfullscreen></iframe>
