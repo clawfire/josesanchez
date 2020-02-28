@@ -6,7 +6,7 @@
                 <div class="countdownTitle">
                     <h4>Next Big Event</h4>
                     {% assign event = include.event %}
-                    <a href="{{event.url}}"><img src="{{event.brand.logo | relative_url}}" alt="Event"></a>
+                    <a href="{{event.url}}"><img src="{{site.data.venues[event.venue].brand.logo|relative_url}}" alt="Event"></a>
                 </div>
                 <div class="sm-countdown sm_content_element sm-style2" id="sm_countdown-19" data-date="{{event.date | date: "%Y/%m/%d"}}">
                     <div class="displayCounter">

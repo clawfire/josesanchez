@@ -7,10 +7,6 @@ link_rsvp: 'https://www.facebook.com/events/1239122319608643/'
 price: 18
 picture: /uploads/woof-a3.jpg
 isBig: true
-social:
-  facebook: 'https://www.facebook.com/woofluxembourg/'
-  youtube: 'https://www.youtube.com/channel/UChdzQVi29kSg_140fS4qT0A'
-  instagram: woofluxembourg
 ---
 We’re coming with our 💪🏼Men-only party💪🏼 and a new concept: **SIN CITY**. We’re gonna take over the Bar Rouge and entirely relook it for the night. Plus, we’re inviting [Black Flamingo](http://woofmenonly.com/dj/black-flamingo/) from Madrid as guest DJ, **Paco** is coming back(WOOF Luxembourg 17) with **Manuel Scalco** (WOOF Paris 2) to put you on fire.
 
