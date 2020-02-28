@@ -217,3 +217,15 @@ ColorCode Köln:
         Die Adresse kennt wohl jeder, immerhin gibt das „Bumslokal“ in der Mathiasstraße 22 nun schon seit 1972 (Platzjabbeck, Hands oder Boners).
         Hier lebt man seinen Fetisch aus und feiert seine Sexualität. Hier trifft man alte und neue Freunde an der Bar oder plauscht mit dem Barkeeper. Und wer frei genug ist, kann sogar beides gleichzeitig. Be free ist unser Motto. Hier im Pullermanns trifft der Ledermann auf den Anzugträger, der Bär und der Skaterboy sitzen zusammenan der Theke.
         Ob Jahrgang 1940 oder 1990, ob ganz in Gummi oder völlig nackt, alles geht. Die einzige (aber sehr wichtige) Spielregel ist Offenheit, gegenseitige Toleranz und Akzeptanz.
+GentleBear:
+    location: 🇩🇪 Köln, Germany
+    brand:
+        logo: uploads/GentleBears_logo_clipped_rev_1.png
+        website: https://www.gentle-bears.de/
+    social:
+        facebook: https://www.facebook.com/pg/gentleBearsCGN/
+    gps:
+        - 50.933636
+        - 6.958733
+    description: >-
+        Im Herzen der Altstadt befindet sich das Szenelokal für Männer die haarig oder bärtig sind oder Männer die haarige ,bärtige Männer mögen.
