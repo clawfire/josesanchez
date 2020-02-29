@@ -1,0 +1,28 @@
+---
+label: Events
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: venue
+  label: venue
+- type: text
+  name: link_ticket
+  label: link_ticket
+- type: text
+  name: link_rsvp
+  label: link_rsvp
+- type: number
+  name: price
+  label: price
+- type: file
+  name: picture
+  label: picture
+- type: boolean
+  name: isBig
+  label: isBig
