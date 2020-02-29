@@ -22,11 +22,7 @@ collections:
                 - label:          "Videos"
                   name:           "videos"
                   widget:         "list"
-                  field:
-                      - label:    Video Link
-                        name:     url
-                        widget:   string
-                        hint:     "Plese only youtube video at the moment."
+                  field: { label: "Video Link", name: "url", widget: "string", hint: "Plese only youtube video at the moment."}
           - label:                "Biography Page"
             name:                 "biography"
             file:                 "biography.md"
