@@ -12,8 +12,8 @@ sections:
   create: all
 - type: directory
   path: _albums
-  label: Albums
-  create: all
+  label: Music Albums
+  create: documents
   match: "**/*"
 - type: directory
   path: _events
