@@ -3,7 +3,7 @@ title: Contact
 layout: contact
 is_contact: true
 contact_info:
-  address: '200 rue de Trèves, L2630 Luxembourg, Luxembourg'
+  address: '59 rue Jean Jaures, 3490 Dudelange, Luxembourg'
   description: >-
     I don't receive random people from the internet at home. But you can send me
     letter or use it as reference into for me into your CRM or whatever related
@@ -11,7 +11,7 @@ contact_info:
     don't need one on my bills. All the fines lines can be find on them.
   email: booking@josesanchez.com
   fax: What ?
-  gps: '{"type":"Point","coordinates":[6.1601643,49.6151596]}'
+  gps: '{"type":"Point","coordinates":[6.0818682,49.4796838]}'
   phone: +352 621 395 520
 ---
 
