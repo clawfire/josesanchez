@@ -5,18 +5,37 @@ fields:
 - type: text
   name: layout
   label: layout
+  config:
+    required: true
+  hidden: true
+  default: album
 - type: datetime
   name: date
-  label: date
+  label: Release date
+  config:
+    required: true
+  default: now
 - type: text
   name: title
-  label: title
-- type: text
-  name: type
-  label: type
-- type: text
-  name: format
-  label: format
+  label: Album name
+  config:
+    required: true
+- name: type
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - Live Set
+    - Mashup
+    - Remix
+    - Promo Set
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
 - type: field_group_list
   name: tracks
   label: tracks
