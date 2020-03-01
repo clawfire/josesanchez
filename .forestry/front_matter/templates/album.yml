@@ -36,26 +36,65 @@ fields:
       file: 
       path: 
   label: Type
+- name: format
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - Streaming
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Format
 - type: field_group_list
   name: tracks
-  label: tracks
+  label: Tracks
   fields:
-  - type: text
-    name: duration
-    label: duration
   - type: text
     name: name
-    label: name
+    label: Title
+    config:
+      required: true
+  - type: text
+    name: duration
+    label: Duration
+    description: mm:ss format
+    config:
+      required: true
+  config:
+    labelField: name
+    min: '1'
 - type: field_group_list
   name: links
-  label: links
+  label: Links
   fields:
-  - type: text
-    name: platform
-    label: platform
+  - name: platform
+    type: select
+    default: []
+    config:
+      required: true
+      options:
+      - soundcloud
+      - youtube
+      - itunes
+      - spotify
+      - deezer
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Platform
   - type: text
     name: url
-    label: url
+    label: URL
+    config:
+      required: true
+  config:
+    min: '1'
 - type: file
   name: picture
-  label: picture
+  label: Cover
