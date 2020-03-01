@@ -7,11 +7,9 @@ sections:
 - type: document
   path: _data/venues.yml
   label: Venues
-  match: "**/*"
 - type: document
   path: _data/videos.yml
   label: Videos
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
