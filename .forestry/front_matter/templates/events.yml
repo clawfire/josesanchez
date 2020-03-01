@@ -15,6 +15,18 @@ fields:
   config:
     required: true
   default: now
+- name: venue
+  type: select
+  default: []
+  config:
+    required: true
+    options: []
+    source:
+      type: documents
+      section: venues
+      file: _data/venues.yml
+      path: 
+  label: Venue
 - name: price
   type: number
   description: Let empty for free event
