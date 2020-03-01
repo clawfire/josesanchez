@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _data/venues.yml
-  label: Venues
-- type: document
-  path: _data/videos.yml
-  label: Videos
 - type: jekyll-pages
   label: Pages
   create: all
@@ -21,11 +15,23 @@ sections:
   label: Music Albums
   create: documents
   match: "**/*"
+  templates:
+  - album
 - type: directory
   path: _events
   label: Events
   create: all
   match: "**/*"
+  templates:
+  - events
+- type: heading
+  label: Collection
+- type: document
+  path: _data/venues.yml
+  label: Venues
+- type: document
+  path: _data/videos.yml
+  label: Videos
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
