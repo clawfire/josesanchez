@@ -5,24 +5,37 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: event
+  config:
+    required: true
+  hidden: true
 - type: datetime
   name: date
-  label: date
-- type: text
-  name: venue
-  label: venue
+  label: Date of the event
+  config:
+    required: true
+  default: now
+- name: price
+  type: number
+  description: Let empty for free event
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Price (in EUR)
 - type: text
   name: link_ticket
-  label: link_ticket
+  label: URL of ticketing
 - type: text
   name: link_rsvp
-  label: link_rsvp
-- type: number
-  name: price
-  label: price
-- type: file
-  name: picture
-  label: picture
+  label: URL of RSVP
+  description: Facebook event or similar
 - type: boolean
   name: isBig
-  label: isBig
+  label: Important Event
+  description: Put this event in the homepage with a countdown
+- type: file
+  name: picture
+  label: Flyer / Banner
