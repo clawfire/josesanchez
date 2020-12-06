@@ -200,7 +200,7 @@ jQuery(document).ready(function() {
 
     // FitVides Option
     jQuery("html").fitVids({
-        customSelector: "iframe.yt"
+        customSelector: "iframe.yt, iframe.anchor"
     });
 
     // LightBox Options
