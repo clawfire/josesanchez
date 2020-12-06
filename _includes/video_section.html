@@ -11,7 +11,7 @@
 				{%- assign videos = site.data.videos -%}
 				{%- for video in videos limit:3 -%}
                     <div class="col-sm-4">
-                        <iframe width="560" height="315" src="{{video.url}}"  allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="{{video.url}}"  allowfullscreen class="yt"></iframe>
                     </div><!-- end col-sm-4 -->
 				{%- endfor -%}
 			</div>
