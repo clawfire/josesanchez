@@ -13,3 +13,13 @@
 .breadTxt p{
     width: 40%;
 }
+.js-height-full .col-sm-12,
+.no-mb .col-sm-12{
+    padding:0;
+}
+.no-mb{
+    overflow-x: hidden;
+}
+.star .cover{
+    width: calc(100% + 15px)
+}
