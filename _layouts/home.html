@@ -6,8 +6,7 @@
     {% include breadcrumb.html %}
     {% include top_header.html %}
     {% if site.albums %}{% include album_cover.html %}{% endif%}
-    {% if site.events %}{% include events_list.html %}{% endif%}
-    {% assign bigEvent = site.events|where:'isBig',true|sort: 'date'| reverse | first %}
+    {% include events_bandsintown.html %}
     {% if bigEvent %}{% include big_event.html event=bigEvent%}{% endif %}
     {% include twitter_section.html %}
     {% if site.data.videos %}{% include video_section.html %}{% endif %}
