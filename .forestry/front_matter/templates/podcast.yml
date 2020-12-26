@@ -1,0 +1,99 @@
+---
+label: Podcast
+hide_body: false
+display_field: title
+fields:
+- name: layout
+  type: text
+  config:
+    required: true
+  label: Layout
+  hidden: true
+  default: podcast
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Title of your podcast
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: true
+  default: now
+- name: author
+  type: text
+  config:
+    required: true
+  label: Author
+- name: season
+  type: number
+  label: Season
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 1
+    required: false
+- name: episode
+  type: number
+  label: Episode
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 1
+- name: episodetype
+  type: select
+  default: full
+  config:
+    required: true
+    options:
+    - full
+    - trailer
+    - bonus
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Episode Type
+- name: explicit
+  type: select
+  default: 'false'
+  config:
+    required: true
+    options:
+    - 'true'
+    - 'false'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Explicit
+- name: audio
+  type: text
+  config:
+    required: true
+  label: Audio URL
+- name: length
+  type: number
+  label: Length (in seconds)
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 0
+    max: 
+    step: 1
+    required: true
