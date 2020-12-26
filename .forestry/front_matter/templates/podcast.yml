@@ -1,6 +1,7 @@
 ---
 label: Podcast
 hide_body: false
+display_field: title
 fields:
 - name: layout
   type: text
