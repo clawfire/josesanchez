@@ -97,3 +97,5 @@ fields:
     max: 
     step: 1
     required: true
+pages:
+- _posts/2020-12-05-l-essentiel-mix-5-dec.2020.md
