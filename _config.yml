@@ -58,6 +58,22 @@ atom:
         - _events
         - _albumsne
     defaultPostDir: _events
+podcast:
+    title: "L'Essentiel Mix - L'émission Club par José Sanchez"
+    description: >
+    Chaque samedi soir, l'Essentiel Radio boost ton week-end, retrouve l'Essentiel Mix, l'émission qui va désormais changer ton week-end. 22h - 00h, il a mixé avec Lost Frequencies, Kungs et tout les plus grands. En exclusivité, DJ José Sanchez a choisis l'Essentiel Radio pour sa nouvelle résidence. L'Essentiel Mix, l'émission club de référence au Luxembourg, c'est sur l'Essentiel.
+    url: /podcast.xml # podcast xml url
+    author: DJ José Sanchez
+    email: contact@djsanchez.eu
+    logo: [podcast logo url] # logo in 1400 – 3000 pixel
+    language: en # http://www.loc.gov/standards/iso639-2/php/code_list.php
+    category: Music # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+    subcategory:
+    type: episodic # episodic | serial
+    explicit: false # true | false
+    complete: 'no' # 'yes' | 'no'
+    block: 'no' # 'yes' | 'no'
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
