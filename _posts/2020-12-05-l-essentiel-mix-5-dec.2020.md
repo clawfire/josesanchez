@@ -1,5 +1,6 @@
 ---
 layout: podcast
+category: podcast
 date: 2020-12-05 17:29:10 +0000
 season: 1
 episode: 1

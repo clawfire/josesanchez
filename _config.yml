@@ -19,59 +19,57 @@ url:                "http://www.djsanchez.eu" # the base hostname & protocol for
 timezone:           "Europe/Luxembourg"
 google_api_key:     "AIzaSyBtYUCV9vOHWUXtS7Vb7PW34c1jSmGDR1A"
 social:
-    facebook:       https://www.facebook.com/DJ.J.Sanchez/
-    twitter:        sanchezjosedj
-    instagram:      dj_josesanchez
+  facebook:       https://www.facebook.com/DJ.J.Sanchez/
+  twitter:        sanchezjosedj
+  instagram:      dj_josesanchez
 
 # Build settings
 sass:
-    sass_dir:       _sass
+  sass_dir:       _sass
 markdown:           kramdown
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
 collections:
+  posts:
+    output: true
+    permalink: /blog/:path/
   events :
-      output:       true
-      permalink:    /:collection/:path/
+    output:       true
+    permalink:    /:collection/:path/
   albums :
       output :      true
       permalink:    /:collection/:path/
 defaults:
-    - scope :
-        path:       ""
-        type:       "events"
-      values:
-        layout:     "event"
-        is_event:   true
-    - scope :
-        path:       ""
-        type:       "albums"
-      values:
-        layout:     "album"
-        is_album :  true
+- scope :
+    path:       ""
+    type:       "events"
+  values:
+    layout:     "event"
+    is_event:   true
+- scope :
+    path:       ""
+    type:       "albums"
+  values:
+    layout:     "album"
+    is_album :  true
 
 pagination:
-    enabled:        true
-atom:
-    postDirs:
-        - _events
-        - _albumsne
-    defaultPostDir: _events
+  enabled:        true
 podcast:
-    title: "L'Essentiel Mix - L'émission Club par José Sanchez"
-    description: Chaque samedi soir, l'Essentiel Radio boost ton week-end, retrouve l'Essentiel Mix, l'émission qui va désormais changer ton week-end. 22h - 00h, il a mixé avec Lost Frequencies, Kungs et tout les plus grands. En exclusivité, DJ José Sanchez a choisis l'Essentiel Radio pour sa nouvelle résidence. L'Essentiel Mix, l'émission club de référence au Luxembourg, c'est sur l'Essentiel.
-    url: /podcast.xml # podcast xml url
-    author: DJ José Sanchez
-    email: contact@djsanchez.eu
-    logo: https://d2f4gvquo0w67t.cloudfront.net/podcast.jpg # logo in 1400 – 3000 pixel
-    language: fr # http://www.loc.gov/standards/iso639-2/php/code_list.php
-    category: Music # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
-    subcategory:
-    type: episodic # episodic | serial
-    explicit: false # true | false
-    complete: 'no' # 'yes' | 'no'
-    block: 'no' # 'yes' | 'no'
+  title: "L'Essentiel Mix - L'émission Club par José Sanchez"
+  description: Chaque samedi soir, l'Essentiel Radio boost ton week-end, retrouve l'Essentiel Mix, l'émission qui va désormais changer ton week-end. 22h - 00h, il a mixé avec Lost Frequencies, Kungs et tout les plus grands. En exclusivité, DJ José Sanchez a choisis l'Essentiel Radio pour sa nouvelle résidence. L'Essentiel Mix, l'émission club de référence au Luxembourg, c'est sur l'Essentiel.
+  url: /podcast.xml # podcast xml url
+  author: DJ José Sanchez
+  email: contact@djsanchez.eu
+  logo: https://d2f4gvquo0w67t.cloudfront.net/podcast.jpg # logo in 1400 – 3000 pixel
+  language: fr # http://www.loc.gov/standards/iso639-2/php/code_list.php
+  category: Music # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+  subcategory:
+  type: episodic # episodic | serial
+  explicit: false # true | false
+  complete: 'no' # 'yes' | 'no'
+  block: 'no' # 'yes' | 'no'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
