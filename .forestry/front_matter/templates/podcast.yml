@@ -10,6 +10,13 @@ fields:
   label: Layout
   hidden: true
   default: podcast
+- name: category
+  type: text
+  config:
+    required: true
+  label: Category
+  hidden: true
+  default: podcast
 - name: title
   type: text
   config:
