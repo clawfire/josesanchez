@@ -1,0 +1,35 @@
+---
+layout: null
+---
+{
+  "options": {
+    "theme": "default",
+    "startPanel": "Transcript"
+  },
+  "extensions": {
+    "ChapterMarks": {},
+    "EpisodeInfo": {},
+    "Playlist": {},
+    "Transcript": {},
+    "SubscribeBar": {disabled: false}
+  },
+  "podcast": {
+    "title": "{{ site.podcast.title }}",
+    "feed": "{{ "podcast.xml" | absolute_url }}",
+    "episodes": [
+    {% for post in site.categories.podcast %}
+     {
+      "media": {
+        "mp3": "{{ post.audio | absolute_url }}"
+      },
+      "coverUrl": "{{ post.cover | default: site.podcast.logo | absolute_url }}",
+      "title": "{{ post.title }},
+      "subtitle": "Season {{ post.season }}, Episode {{ post.episode }}",
+      "url": "{{ post.url | absolute_url }}",
+      "embedCode": "<script class=\"podigee-podcast-player\" src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\" data-configuration=\"\"><\/script>",
+      "description": "{{ post.content | json_escape | strip_newlines }}",
+    },
+    {% endfor %}
+  ],
+  }
+}
