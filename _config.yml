@@ -63,13 +63,13 @@ podcast:
   author: DJ José Sanchez
   email: contact@djsanchez.eu
   logo: https://d2f4gvquo0w67t.cloudfront.net/podcast.jpg # logo in 1400 – 3000 pixel
-  language: fr # http://www.loc.gov/standards/iso639-2/php/code_list.php
+  language: fr-fr # http://www.loc.gov/standards/iso639-2/php/code_list.php (ie. 'en-us')
   category: Music # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
   subcategory:
   type: episodic # episodic | serial
-  explicit: false # true | false
+  explicit: false # true (must be true if at least one episode is explicit) | false
   complete: 'no' # 'yes' | 'no'
-  block: 'no' # 'yes' | 'no'
+  block: 'no' # 'yes' (hide in Apple’s directory) | 'no'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
