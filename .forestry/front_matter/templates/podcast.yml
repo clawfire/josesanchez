@@ -17,6 +17,11 @@ fields:
   label: Category
   hidden: true
   default: podcast
+- name: cover
+  type: file
+  config:
+    maxSize: 64
+  label: Episode Picture
 - name: title
   type: text
   config:
@@ -106,3 +111,6 @@ fields:
     required: true
 pages:
 - _posts/2020-12-05-l-essentiel-mix-5-dec.2020.md
+- _posts/2020-12-24-l-essentiel-mix-24-dec.2020.md
+- _posts/l-essentiel-mix-12-dec.2020.md
+- _posts/l-essentiel-mix-19-dec.2020.md
