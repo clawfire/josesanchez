@@ -19,8 +19,8 @@
                 <li class="col-md-3 col-sm-3 col-xs-12">
                     <div class="album-icon">
                         <span class="thumbs-album">
-								<a href="{{album.links[0].url}}"><img width="270" height="270" src="{{album.picture | relative_url}}" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
-							</span>
+                          <a href="{{album.links[0].url}}"><img width="270" height="270" src="{{album.picture | relative_url}}" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+                        </span>
                         <span class="disk"></span>
                     </div>
                     <!-- END ALBUM ICON -->
@@ -42,11 +42,39 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <iframe src="https://anchor.fm/essentiel-jose-sanchez/embed" height="102px" width="400px" frameborder="0" scrolling="no" class="anchor"></iframe>
-            <div class="col-xs-12 text-center">
-                <a href="https://podcasts.apple.com/us/podcast/jose-sanchez/id1332772793?itsct=podcast_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/standard-black/en-US?size=250x83&amp;releaseDate=1602340440&h=6aff79e7fe178dd033b98c0d77b51b92" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
-            </div>
+        <div class="list-albums">
+            <ul class="list-feature col-md-12 col-xs-12 col-sm-12">
+                <li class="col-md-3 col-sm-3 col-xs-12 col-md-offset-3">
+                    <div class="album-icon">
+                        <span class="thumbs-album">
+                          <a href="http://feeds.feedburner.com/essentiel-mix-jose-sanchez"><img width="270" height="270" src="{{ site.podcast.logo | absolute_url }}" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+                        </span>
+                        <span class="disk"></span>
+                    </div>
+                    <!-- END ALBUM ICON -->
+                    <div class="name">
+                        <h3>{{ site.podcast.title }}</h3>
+                        <p>Podcast</p>
+                        <a href="https://podcasts.apple.com/us/podcast/lessentiel-mix-l%C3%A9mission-club-par-jos%C3%A9-sanchez/id1543605228?itsct=podcast_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 100%; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-US?size=250x83&amp;releaseDate=1608831960&h=38b9fb5b100479ead327a3a3d76ce3e7" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+                    </div>
+                    <!-- end name -->
+                </li>
+                <li class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="album-icon">
+                        <span class="thumbs-album">
+                          <a href="http://feeds.feedburner.com/DJJoseSanchez"><img width="270" height="270" src="https://p190.p3.n0.cdn.getcloudapp.com/items/qGulY1wE/51e4caf2-26c0-4272-82db-5418d0e215a9.jpg?v=46460bfa452d23c5fd9894793f5ac6c1" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+                        </span>
+                        <span class="disk"></span>
+                    </div>
+                    <!-- END ALBUM ICON -->
+                    <div class="name">
+                        <h3>José Sanchez</h3>
+                        <p>Podcast</p>
+                        <a href="https://podcasts.apple.com/us/podcast/jose-sanchez/id1332772793?itsct=podcast_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 100%; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-US?size=250x83&amp;releaseDate=1608150060&h=005c462776979f80504a3479ac4f9dd5" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+                    </div>
+                    <!-- end name -->
+                </li>
+            </ul>
         </div>
 
         <!-- end list-albums -->
