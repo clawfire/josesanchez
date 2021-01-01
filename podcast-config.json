@@ -22,7 +22,7 @@ layout: null
         "mp3": "{{ post.audio | absolute_url }}"
       },
       "coverUrl": "{{ post.cover | default: site.podcast.logo | absolute_url }}",
-      "title": "{{ post.title }},
+      "title": "{{ post.title }}",
       "subtitle": "Season {{ post.season }}, Episode {{ post.episode }}",
       "url": "{{ post.url | absolute_url }}",
       "embedCode": "<script class=\"podigee-podcast-player\" src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\" data-configuration=\"\"><\/script>",
