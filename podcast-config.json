@@ -29,6 +29,23 @@ layout: null
     }
     {% unless forloop.last == true%},{% endunless %}
     {% endfor %}
-  ]
+    ],
+    "episode":{
+      {% for post in site.categories.podcast limit:1%}
+      {
+       "media": {
+         "mp3": "{{ post.audio | absolute_url }}"
+       },
+       "coverUrl": "{{ post.cover | default: site.podcast.logo | absolute_url }}",
+       "title": {{ post.title | jsonify}},
+       "subtitle": "Season {{ post.season }}, Episode {{ post.episode }}",
+       "url": "{{ post.url | absolute_url }}",
+       "description": {{ post.content | jsonify }}
+     }
+     {% endfor %}
+    },
+   "connections":{
+     "itunes":"https://podcasts.apple.com/us/podcast/lessentiel-mix-l%C3%A9mission-club-par-jos%C3%A9-sanchez/id1543605228"
+   }
   }
 }
