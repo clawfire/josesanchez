@@ -3,8 +3,7 @@ layout: null
 ---
 {
   "options": {
-    "theme": "default",
-    "startPanel": "Transcript"
+    "theme": "default"
   },
   "extensions": {
     "ChapterMarks": {},
