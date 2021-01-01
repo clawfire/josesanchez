@@ -26,7 +26,7 @@ layout: null
       "subtitle": "Season {{ post.season }}, Episode {{ post.episode }}",
       "url": "{{ post.url | absolute_url }}",
       "embedCode": "<script class=\"podigee-podcast-player\" src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\" data-configuration=\"\"><\/script>",
-      "description": "{{ post.content | json_escape | strip_newlines }}",
+      "description": "{{ post.content | jsonify }}",
     },
     {% endfor %}
   ],
