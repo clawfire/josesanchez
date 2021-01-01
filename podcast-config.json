@@ -10,7 +10,7 @@ layout: null
     "EpisodeInfo": {},
     "Playlist": {},
     "Transcript": {},
-    "SubscribeBar": {disabled: false}
+    "SubscribeBar": {"disabled": false}
   },
   "podcast": {
     "title": "{{ site.podcast.title }}",
@@ -22,13 +22,13 @@ layout: null
         "mp3": "{{ post.audio | absolute_url }}"
       },
       "coverUrl": "{{ post.cover | default: site.podcast.logo | absolute_url }}",
-      "title": "{{ post.title }}",
+      "title": {{ post.title | jsonify}},
       "subtitle": "Season {{ post.season }}, Episode {{ post.episode }}",
       "url": "{{ post.url | absolute_url }}",
-      "embedCode": "<script class=\"podigee-podcast-player\" src=\"https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js\" data-configuration=\"\"><\/script>",
-      "description": "{{ post.content | jsonify }}",
-    },
+      "description": {{ post.content | jsonify }}
+    }
+    {% unless forloop.last == true%},{% endunless %}
     {% endfor %}
-  ],
+  ]
   }
 }
