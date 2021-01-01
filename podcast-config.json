@@ -30,7 +30,7 @@ layout: null
     {% unless forloop.last == true%},{% endunless %}
     {% endfor %}
     ],
-    "episode":{
+    "episode":
       {% for post in site.categories.podcast limit:1%}
       {
        "media": {
@@ -41,9 +41,8 @@ layout: null
        "subtitle": "Season {{ post.season }}, Episode {{ post.episode }}",
        "url": "{{ post.url | absolute_url }}",
        "description": {{ post.content | jsonify }}
-     }
+     },
      {% endfor %}
-    },
    "connections":{
      "itunes":"https://podcasts.apple.com/us/podcast/lessentiel-mix-l%C3%A9mission-club-par-jos%C3%A9-sanchez/id1543605228"
    }
