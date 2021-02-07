@@ -1,16 +1,16 @@
 ---
 layout: podcast
 category: podcast
-date: 2021-01-16 20:13:26 +0000
+date: 2021-01-23 20:13:26 +0000
 season: 1
-episode: 7
+episode: 8
 episodetype: full
 explicit: 'false'
-length: 7213
+length: 7177
 cover: ''
 title: L'Essentiel Mix - 23 jan. 2021
 author: Dj José Sanchez
-audio: https://d2f4gvquo0w67t.cloudfront.net/2021-01-16%20Essentiel%20Mix.mp3
+audio: https://d2f4gvquo0w67t.cloudfront.net/2021-01-23%20Essentiel%20Mix.mp3
 
 ---
 Retrouvez moi chaque Samedi, de 22h à minuit sur 107.7 ou sur [http://www.lessentielradio.lu/](http://www.lessentielradio.lu/ "http://www.lessentielradio.lu/") aussitot en podcast sur vos plateformes préférées.
