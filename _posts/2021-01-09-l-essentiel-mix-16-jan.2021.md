@@ -1,7 +1,7 @@
 ---
 layout: podcast
 category: podcast
-date: 2021-01-09 20:13:26 +0000
+date: 2021-01-16 20:13:26 +0000
 season: 1
 episode: 7
 episodetype: full
