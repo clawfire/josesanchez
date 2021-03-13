@@ -1,9 +1,9 @@
 ---
 layout: podcast
 category: podcast
-date: 2021-02-06 20:13:26 +0000
+date: 2021-02-13 20:13:26 +0000
 season: 1
-episode: 10
+episode: 11
 episodetype: full
 explicit: 'false'
 length: 7167
