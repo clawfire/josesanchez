@@ -1,12 +1,12 @@
 ---
 layout: podcast
 category: podcast
-date: 2021-02-13 20:13:26 +0000
+date: 2021-02-13 00:00:00 +0000
 season: 1
 episode: 11
 episodetype: full
 explicit: 'false'
-length: 7140
+length: 7174
 cover: ''
 title: L'Essentiel Mix - 13 fev. 2021
 author: Dj José Sanchez
