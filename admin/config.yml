@@ -28,7 +28,7 @@ collections:
             file:                 "biography.md"
             fields:
                 - { label: 'Title', name: 'title', default: 'Biography' }
-                - { label: 'Layout', name: 'title', widget: 'hidden', default: 'page' }
+                - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
                 - { label: 'Body', name: 'body', widget: 'markdown' }
                 - { label: 'Signature Picture', name: 'signature_picture', widget: 'image', required: false, allow_multiple: false }
                 - { label: 'Background Picture', name: 'background_picture', widget: 'image', required: false, allow_multiple: false , hint: "Should be 1920 x 1080 or same ratio. Will be cropped otherwise."}
