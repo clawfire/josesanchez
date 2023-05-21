@@ -20,7 +20,7 @@ collections:
             file:                 "_data/videos.yml"
             fields:
                 - label:          "Videos"
-                  name:           "videos"
+                  name:           "videos-links"
                   widget:         "list"
                   field: { label: "Video Link", name: "url", widget: "string", hint: "Plese only youtube video at the moment."}
           - label:                "Biography Page"
