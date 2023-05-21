@@ -68,7 +68,7 @@ collections:
           - label:                "Type"
             name:                 "type"
             widget:               "select"
-            options:              ["Live Set","Podcast","Promo Set", "Remix", "Mashup"]
+            options:              ["Live Set","Podcast","Promo Set", "Remix", "Mashup", "Original"]
             default:              ["Live Set"]
           - label:                "Format"
             name:                 "format"
