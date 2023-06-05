@@ -68,7 +68,7 @@ collections:
           - {lavel: "File", name: "audio", widget: "string", required: true, pattern: ['/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/', "Must be a valid URL"], default: "https://d2f4gvquo0w67t.cloudfront.net/"}
           - {label: "Explicit Content", name: "explicit", widget: "boolean", default: false, hint: "Does it include swearing or porn references"}
           - {label: "Episode Type", name: "episodetype", required: true, widget: "select", options: ["full", "trailer", "bonus"], default: ["full"]}
-          - {label: "Duration (in seconds)", name: "episode", widget: "number", min: 1, step: 1, value_type: "int", default: 1, required: true}
+          - {label: "Duration (in seconds)", name: "length", widget: "number", min: 1, step: 1, value_type: "int", default: 1, required: true}
           - {label: "Author", name: "author", widget: "string", required: true, default: "Dj José Sanchez"}
 
     - name:                       "albums"
