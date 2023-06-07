@@ -120,8 +120,8 @@ collections:
                 - label:          "Platform"
                   name:           "platform"
                   widget:         "select"
-                  options:        ["lastfm","soundcloud","itunes","spotify","amazon"]
-                  default:        ["soundcloud"]
+                  options:        ["lastfm","soundcloud","itunes","spotify","amazon","beatport"]
+                  default:        "soundcloud"
                   hint:           "Select the platform associated with the url"
                 - {label: "URL", name: "url", widget: "string"}
           - {label: "Cover Picture", name: "picture", widget: "image", allow_multiple: false}
