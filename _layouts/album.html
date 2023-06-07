@@ -96,6 +96,12 @@ collection: albums
                                         <div><i class="fa fa-amazon"></i></div>
                                     </a>
                                 </li>
+                                {%- when 'beatport' -%}
+                                <li>
+                                  <a href="{{link.url}}">
+                                    <div>Beatport</div>
+                                  </a>
+                                </li>
                                 {%- else -%}
                                 {%- endcase -%}
 
