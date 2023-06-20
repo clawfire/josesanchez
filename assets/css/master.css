@@ -7,8 +7,8 @@
 @import url(https://fonts.googleapis.com/css?family=Abel);
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,400italic,300italic,500italic,600,600italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
-@import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway+Dots);
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
 @font-face {
   font-family: codeBold;
   src: url(../fonts/codeBold.otf);
@@ -13629,7 +13629,7 @@ img.rsImg {
 *
 *  RoyalSlider White Controls Skin
 *
-*    1. Arrows 
+*    1. Arrows
 *    2. Bullets
 *    3. Thumbnails
 *    4. Tabs
@@ -13637,11 +13637,11 @@ img.rsImg {
 *    6. Play/close video button
 *    7. Preloader
 *    8. Caption
-*    
+*
 *  Sprite: 'rs-minimal-white.png'
 *  Feel free to edit anything
 *  If you don't some part - just delete it
-* 
+*
 ******************************/
 /* Background */
 .rsMinW,
@@ -15164,7 +15164,7 @@ p a {
     opacity: 0;
   }
 }
-/* 
+/*
  *  Owl Carousel - Auto Height Plugin
  */
 .owl-height {
@@ -15174,7 +15174,7 @@ p a {
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -15267,7 +15267,7 @@ p a {
 .no-js .owl-carousel {
   display: block;
 }
-/* 
+/*
  *  Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
@@ -15281,7 +15281,7 @@ p a {
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
 }
-/* 
+/*
  *  Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {
