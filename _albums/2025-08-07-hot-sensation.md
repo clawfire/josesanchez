@@ -7,7 +7,7 @@ type: Original
 format: Digital
 tracks:
   - name: Hot Sensation
-    file: https://www.beatport.com/fr/release/hot-sensation/5099484
+    file: https://soundcloud.com/ricovibeskapwan/rico-vibes-jose-sanchez-hot-sensation-radio-mix-preorder-now
     duration: 02:48
 links:
   - platform: soundcloud
